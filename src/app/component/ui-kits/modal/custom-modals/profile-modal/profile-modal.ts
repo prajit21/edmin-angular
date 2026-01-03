@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, TemplateRef } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-profile-modal',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './profile-modal.html',
   styleUrl: './profile-modal.scss',
 })

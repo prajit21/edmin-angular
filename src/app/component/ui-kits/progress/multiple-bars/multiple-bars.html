@@ -10,14 +10,14 @@
                 <div class="progress">
                     @for(multipleitem of multiple.item; track multipleitem){
                         <div class="progress-bar {{multipleitem.class}}" role="progressbar"
-                            [ngStyle]="{'width':multipleitem.value}" aria-valuenow="30" aria-valuemin="0"
+                            [style.width]="multipleitem.value" aria-valuenow="30" aria-valuemin="0"
                             aria-valuemax="100"></div>
                         }
                 </div>
                 <div class="progress">
                     @for(othesData of multiple.item2; track othesData){
                         <div class="progress-bar {{othesData.class}}" role="progressbar"
-                            [ngStyle]="{'width':othesData.value}" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                            [style.width]="othesData.value" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                         </div>
                         }
                 </div>

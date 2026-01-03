@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { navigationData1 } from '../../../shared/data/faq/faq';
 
 @Component({
   selector: 'app-navigation',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './navigation.html',
   styleUrl: './navigation.scss',
 })

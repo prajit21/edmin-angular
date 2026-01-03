@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AllInvoices } from './all-invoices/all-invoices';
@@ -20,7 +20,6 @@ import { TotalClients, NewProject } from '../../../shared/data/dashboard/default
 @Component({
   selector: 'app-default',
   imports: [
-    CommonModule,
     AllInvoices,
     CoursesHighlighted,
     Investing,
@@ -34,8 +33,8 @@ import { TotalClients, NewProject } from '../../../shared/data/dashboard/default
     TopCommonChart,
     TotalEarning,
     TotalInvestment,
-    TotalVisit,
-  ],
+    TotalVisit
+],
   templateUrl: './default.html',
   styleUrl: './default.scss',
 })

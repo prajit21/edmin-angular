@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 import * as data from '../../../shared/data/buttons/buttons';
 
 @Component({
   selector: 'app-buttons-size',
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './buttons-size.html',
   styleUrl: './buttons-size.scss',
 })

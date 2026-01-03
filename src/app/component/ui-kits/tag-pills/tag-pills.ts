@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Animated } from './animated/animated';
@@ -12,14 +12,13 @@ import * as data from '../../../shared/data/ui-kits/tag-pills';
 @Component({
   selector: 'app-tag-pills',
   imports: [
-    CommonModule,
     Animated,
     BadgeHeadings,
     BadgesButtons,
     Center,
     CommonBadgePills,
-    TouchspinBadges,
-  ],
+    TouchspinBadges
+],
   templateUrl: './tag-pills.html',
   styleUrl: './tag-pills.scss',
 })

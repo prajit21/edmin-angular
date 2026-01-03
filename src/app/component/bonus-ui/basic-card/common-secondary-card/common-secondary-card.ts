@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { commonSecondaryData } from '../../../../shared/data/bonus-ui/basic-card';
 
 @Component({
   selector: 'app-common-secondary-card',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './common-secondary-card.html',
   styleUrl: './common-secondary-card.scss',
 })

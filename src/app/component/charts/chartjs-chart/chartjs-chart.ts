@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BasicBarChart } from './basic-bar-chart/basic-bar-chart';
@@ -11,14 +11,13 @@ import { RadarGraph3 } from './radar-graph3/radar-graph3';
 @Component({
   selector: 'app-chartjs-chart',
   imports: [
-    CommonModule,
     BasicBarChart,
     BasicLinesChart,
     DonutGraph,
     RadarGraph2,
     RadarGraph,
-    RadarGraph3,
-  ],
+    RadarGraph3
+],
   templateUrl: './chartjs-chart.html',
   styleUrl: './chartjs-chart.scss',
 })

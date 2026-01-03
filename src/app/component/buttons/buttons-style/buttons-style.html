@@ -6,27 +6,27 @@
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <div class="nav flex-column nav-pills nav-success card-wrapper bg-light-primary rounded-3">
-                    <a class="nav-link active" [ngClass]="{'active': openTab === 'Default'}" (click)="tabbed('Default')">
+                    <a class="nav-link active" [class.active]="openTab === 'Default'" (click)="tabbed('Default')">
                         <div class="circle-dot-primary"><span></span></div>
                         Default Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Flat'}" (click)="tabbed('Flat')">
+                    <a class="nav-link" [class.active]="openTab === 'Flat'" (click)="tabbed('Flat')">
                         <div class="circle-dot-primary"><span></span></div>
                         Flat Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Edge'}" (click)="tabbed('Edge')">
+                    <a class="nav-link" [class.active]="openTab === 'Edge'" (click)="tabbed('Edge')">
                         <div class="circle-dot-primary"><span></span></div>
                         Edge Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Raised'}" (click)="tabbed('Raised')">
+                    <a class="nav-link" [class.active]="openTab === 'Raised'" (click)="tabbed('Raised')">
                         <div class="circle-dot-primary"><span></span></div>
                         Raised Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Outline'}" (click)="tabbed('Outline')">
+                    <a class="nav-link" [class.active]="openTab === 'Outline'" (click)="tabbed('Outline')">
                         <div class="circle-dot-primary"><span></span></div>
                         Outline Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Gradient'}" (click)="tabbed('Gradient')">
+                    <a class="nav-link" [class.active]="openTab === 'Gradient'" (click)="tabbed('Gradient')">
                         <div class="circle-dot-primary"><span></span></div>
                         Gradient Buttons
                     </a>

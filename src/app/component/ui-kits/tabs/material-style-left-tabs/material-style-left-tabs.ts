@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -8,7 +8,7 @@ import { Feathericon } from '../../../../shared/component/feathericon/featherico
 
 @Component({
   selector: 'app-material-style-left-tabs',
-  imports: [CommonModule, NgbModule, FormsModule, Feathericon],
+  imports: [NgbModule, FormsModule, Feathericon],
   templateUrl: './material-style-left-tabs.html',
   styleUrl: './material-style-left-tabs.scss',
 })

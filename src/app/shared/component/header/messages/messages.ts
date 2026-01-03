@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { Feathericon } from '../../feathericon/feathericon';
 
 @Component({
   selector: 'app-messages',
-  imports: [CommonModule, RouterModule, Feathericon],
+  imports: [RouterModule, Feathericon],
   templateUrl: './messages.html',
   styleUrl: './messages.scss',
 })

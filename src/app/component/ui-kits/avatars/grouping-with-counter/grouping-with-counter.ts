@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-grouping-with-counter',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './grouping-with-counter.html',
   styleUrl: './grouping-with-counter.scss',
 })

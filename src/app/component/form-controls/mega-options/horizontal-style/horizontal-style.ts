@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -10,7 +10,7 @@ import {
 
 @Component({
   selector: 'app-horizontal-style',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './horizontal-style.html',
   styleUrl: './horizontal-style.scss',
 })

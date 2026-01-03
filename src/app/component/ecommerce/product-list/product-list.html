@@ -76,7 +76,7 @@
                       <td>${{item.amount}}</td>
                       <td>
                         <span
-                          [ngClass]="{'font-success' : item.stock === 'In Stock', 'font-danger' : item.stock === 'out of stock', 'font-primary' : item.stock === 'Low Stock'}"
+                          [class]="{'font-success' : item.stock === 'In Stock', 'font-danger' : item.stock === 'out of stock', 'font-primary' : item.stock === 'Low Stock'}"
                           >{{item.stock}}</span
                         >
                       </td>

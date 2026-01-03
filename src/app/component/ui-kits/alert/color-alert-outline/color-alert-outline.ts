@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import * as data from '../../../../shared/data/ui-kits/alert';
 
 @Component({
   selector: 'app-color-alert-outline',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './color-alert-outline.html',
   styleUrl: './color-alert-outline.scss',
 })

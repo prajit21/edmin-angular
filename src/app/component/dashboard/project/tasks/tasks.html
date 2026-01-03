@@ -52,7 +52,7 @@
                             <h6 class="f-w-500">{{ data.status }}</h6>
                             <div class="progress-showcase mt-2">
                                 <div class="progress sm-progress-bar progress-border-{{data.class}}">
-                                    <div class="progress-bar" [ngStyle]="{'width':data.value}"></div>
+                                    <div class="progress-bar" [style.width]="data.value"></div>
                                 </div>
                             </div>
                         </td>

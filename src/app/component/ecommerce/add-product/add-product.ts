@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { DescriptionCategoies } from './description-categoies/description-catego
 
 @Component({
   selector: 'app-add-product',
-  imports: [CommonModule, DropzoneModule, DescriptionCategoies, RouterModule],
+  imports: [DropzoneModule, DescriptionCategoies, RouterModule],
   templateUrl: './add-product.html',
   styleUrl: './add-product.scss',
 })

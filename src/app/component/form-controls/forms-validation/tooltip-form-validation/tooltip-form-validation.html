@@ -4,7 +4,7 @@
         <p class="desc mb-0 mt-1"><span>If your form layout allows it, you can swap the</span><code>..&#123;valid|invalid.&#125;</code><span>-tooltip classes to display validation feedback in a styled tooltip.</span></p>
     </div>
     <div class="card-body">
-        <form class="row g-3 needs-validation custom-input" novalidate="" [ngClass]="{'was-validated': validate}">
+        <form class="row g-3 needs-validation custom-input" novalidate="" [class.was-validated]="validate">
             <div class="col-md-4 position-relative">
                 <label class="form-label" for="validationTooltip01">First name</label>
                 <input class="form-control" id="validationTooltip01" type="text" placeholder="Mark" required="">

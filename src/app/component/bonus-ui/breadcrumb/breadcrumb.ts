@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ColoredBreadcrumb } from './colored-breadcrumb/colored-breadcrumb';
@@ -11,14 +11,13 @@ import { VariationBreadcrumb } from './variation-breadcrumb/variation-breadcrumb
 @Component({
   selector: 'app-breadcrumb',
   imports: [
-    CommonModule,
     ColoredBreadcrumb,
     DefaultBreadcrumb,
     DividerBreadcrumb,
     IconsBreadcrumb,
     OutlineBreadcrumb,
-    VariationBreadcrumb,
-  ],
+    VariationBreadcrumb
+],
   templateUrl: './breadcrumb.html',
   styleUrl: './breadcrumb.scss',
 })

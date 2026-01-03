@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -8,7 +8,7 @@ import { webDesigner, UxDesigner, IOTdeveloper } from '../../../../shared/data/u
 
 @Component({
   selector: 'app-justify-tabs',
-  imports: [CommonModule, NgbModule, FormsModule],
+  imports: [NgbModule, FormsModule],
   templateUrl: './justify-tabs.html',
   styleUrl: './justify-tabs.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BestSellers } from './best-sellers/best-sellers';
@@ -20,7 +20,6 @@ import {
 @Component({
   selector: 'app-ecommerce',
   imports: [
-    CommonModule,
     BestSellers,
     CategoryOverview,
     ManageOrder,
@@ -30,8 +29,8 @@ import {
     SalesByProduct,
     SalesSummary,
     TopEcommerceChart,
-    TopSellingProducts,
-  ],
+    TopSellingProducts
+],
   templateUrl: './ecommerce.html',
   styleUrl: './ecommerce.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-all-invoices',
-  imports: [CommonModule, ClickOutsideDirective, RouterModule],
+  imports: [ClickOutsideDirective, RouterModule],
   templateUrl: './all-invoices.html',
   styleUrl: './all-invoices.scss',
 })

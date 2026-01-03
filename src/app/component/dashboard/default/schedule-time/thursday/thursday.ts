@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-thursday',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './thursday.html',
   styleUrl: './thursday.scss',
 })

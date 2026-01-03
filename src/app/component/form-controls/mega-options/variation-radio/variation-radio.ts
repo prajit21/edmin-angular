@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -10,7 +10,7 @@ import {
 
 @Component({
   selector: 'app-variation-radio',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './variation-radio.html',
   styleUrl: './variation-radio.scss',
 })

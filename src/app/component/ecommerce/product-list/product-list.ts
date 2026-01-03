@@ -1,4 +1,4 @@
-import { CommonModule, DecimalPipe } from '@angular/common';
+import { DecimalPipe, AsyncPipe } from '@angular/common';
 import { Component, inject, viewChildren } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -13,13 +13,13 @@ import { ProductListService } from '../../../shared/services/ecommerce/product-l
 @Component({
   selector: 'app-product-list',
   imports: [
-    CommonModule,
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
     ProductListDirective,
     RouterModule,
-  ],
+    AsyncPipe
+],
   providers: [ProductListService, DecimalPipe],
   templateUrl: './product-list.html',
   styleUrl: './product-list.scss',

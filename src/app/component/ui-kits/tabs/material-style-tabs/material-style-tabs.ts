@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -8,7 +8,7 @@ import { descriptionData, reviewData, userDetailsData } from '../../../../shared
 
 @Component({
   selector: 'app-material-style-tabs',
-  imports: [CommonModule, NgbModule, FormsModule],
+  imports: [NgbModule, FormsModule],
   templateUrl: './material-style-tabs.html',
   styleUrl: './material-style-tabs.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { SalesProduct } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
@@ -6,7 +6,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-sales-by-product',
-  imports: [CommonModule, ClickOutsideDirective],
+  imports: [ClickOutsideDirective],
   templateUrl: './sales-by-product.html',
   styleUrl: './sales-by-product.scss',
 })

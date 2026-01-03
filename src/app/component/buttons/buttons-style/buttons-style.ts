@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 import * as data from '../../../shared/data/buttons/buttons';
@@ -6,7 +6,7 @@ import { CommonButtons } from '../common-buttons/common-buttons';
 
 @Component({
   selector: 'app-buttons-style',
-  imports: [CommonModule, CommonButtons],
+  imports: [CommonButtons, NgClass],
   templateUrl: './buttons-style.html',
   styleUrl: './buttons-style.scss',
 })

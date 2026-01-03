@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { DifferntTagAccordion } from './differnt-tag-accordion/differnt-tag-accordion';
@@ -12,15 +12,14 @@ import { SimpleAccordion } from './simple-accordion/simple-accordion';
 @Component({
   selector: 'app-accordion',
   imports: [
-    CommonModule,
     SimpleAccordion,
     FlushAccordion,
     IconsAccordion,
     MultipleCollapseAccordion,
     HorizontalAccordion,
     NestedAccordion,
-    DifferntTagAccordion,
-  ],
+    DifferntTagAccordion
+],
   templateUrl: './accordion.html',
   styleUrl: './accordion.scss',
 })

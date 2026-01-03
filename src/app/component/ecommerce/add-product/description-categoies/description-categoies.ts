@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-description-categoies',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './description-categoies.html',
   styleUrl: './description-categoies.scss',
 })

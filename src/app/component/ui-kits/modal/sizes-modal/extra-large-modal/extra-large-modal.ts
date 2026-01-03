@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, TemplateRef } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-extra-large-modal',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './extra-large-modal.html',
   styleUrl: './extra-large-modal.scss',
 })

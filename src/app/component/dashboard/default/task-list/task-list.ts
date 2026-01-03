@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -9,7 +9,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-task-list',
-  imports: [CommonModule, RouterModule, ClickOutsideDirective, Feathericon, FormsModule],
+  imports: [RouterModule, ClickOutsideDirective, Feathericon, FormsModule],
   templateUrl: './task-list.html',
   styleUrl: './task-list.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Grouping } from './grouping/grouping';
@@ -10,7 +10,7 @@ import { StatusIndicator } from './status-indicator/status-indicator';
 
 @Component({
   selector: 'app-avatars',
-  imports: [CommonModule, Grouping, GroupingWithCounter, Ratio, Shapes, Sizes, StatusIndicator],
+  imports: [Grouping, GroupingWithCounter, Ratio, Shapes, Sizes, StatusIndicator],
   templateUrl: './avatars.html',
   styleUrl: './avatars.scss',
 })

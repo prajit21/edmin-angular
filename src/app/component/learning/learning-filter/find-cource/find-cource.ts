@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -8,7 +8,7 @@ import { findCourse } from '../../../../shared/data/learning/learning';
 
 @Component({
   selector: 'app-find-cource',
-  imports: [CommonModule, FormsModule, NgbModule],
+  imports: [FormsModule, NgbModule],
   templateUrl: './find-cource.html',
   styleUrl: './find-cource.scss',
 })

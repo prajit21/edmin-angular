@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, TemplateRef } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-open-modal-edmin',
-  imports: [CommonModule],
   templateUrl: './open-modal-edmin.html',
   styleUrl: './open-modal-edmin.scss',
 })

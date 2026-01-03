@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-team-members',
-  imports: [CommonModule, ClickOutsideDirective, RouterModule, CommonTeamChart],
+  imports: [ClickOutsideDirective, RouterModule, CommonTeamChart],
   templateUrl: './team-members.html',
   styleUrl: './team-members.scss',
 })

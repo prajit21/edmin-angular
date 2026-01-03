@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import {
@@ -17,15 +17,14 @@ import { ProjectProgress } from '../../dashboard/project/project-progress/projec
 @Component({
   selector: 'app-general',
   imports: [
-    CommonModule,
     TopEcommerceChart,
     ScheduleTime,
     ProductOffer,
     SalesSummary,
     TotalInvestment,
     TaskSummary,
-    ProjectProgress,
-  ],
+    ProjectProgress
+],
   templateUrl: './general.html',
   styleUrl: './general.scss',
 })

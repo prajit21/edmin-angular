@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { wishlist } from '../../../shared/data/ecommerce/wishlist';
 
 @Component({
   selector: 'app-wishlist',
-  imports: [CommonModule, RouterModule, NgbModule],
+  imports: [RouterModule, NgbModule, NgClass],
   templateUrl: './wishlist.html',
   styleUrl: './wishlist.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -7,7 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-to-do-list',
-  imports: [CommonModule, FormsModule, ClickOutsideDirective],
+  imports: [FormsModule, ClickOutsideDirective],
   templateUrl: './to-do-list.html',
   styleUrl: './to-do-list.scss',
 })

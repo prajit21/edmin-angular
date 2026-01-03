@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-top-card',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './top-card.html',
   styleUrl: './top-card.scss',
 })

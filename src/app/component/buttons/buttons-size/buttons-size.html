@@ -6,19 +6,19 @@
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <div class="nav flex-column nav-pills nav-success card-wrapper bg-light-secondary rounded-3">
-                    <a class="nav-link active" [ngClass]="{'active': openTab === 'Default'}" (click)="tabbed('Default')">
+                    <a class="nav-link active" [class.active]="openTab === 'Default'" (click)="tabbed('Default')">
                         <div class="circle-dot-secondary"> <span></span></div>
                         Default Size
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Large'}" (click)="tabbed('Large')">
+                    <a class="nav-link" [class.active]="openTab === 'Large'" (click)="tabbed('Large')">
                         <div class="circle-dot-secondary"> <span></span></div>
                         Large Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Small'}" (click)="tabbed('Small')">
+                    <a class="nav-link" [class.active]="openTab === 'Small'" (click)="tabbed('Small')">
                         <div class="circle-dot-secondary"> <span></span></div>
                         Small Buttons
                     </a>
-                    <a class="nav-link" [ngClass]="{'active': openTab === 'Extra Small'}"
+                    <a class="nav-link" [class.active]="openTab === 'Extra Small'"
                         (click)="tabbed('Extra Small')">
                         <div class="circle-dot-secondary"> <span></span></div>
                         Extra Small

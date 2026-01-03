@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Blockquotes } from './blockquotes/blockquotes';
@@ -13,7 +13,6 @@ import { TextColor } from './text-color/text-color';
 @Component({
   selector: 'app-typography',
   imports: [
-    CommonModule,
     Blockquotes,
     ColoredHeadings,
     DisplayHeading,
@@ -21,8 +20,8 @@ import { TextColor } from './text-color/text-color';
     Headings,
     InlineTextElements,
     ListingTypography,
-    TextColor,
-  ],
+    TextColor
+],
   templateUrl: './typography.html',
   styleUrl: './typography.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { OpenModalEdmin } from './open-modal-edmin/open-modal-edmin';
@@ -8,7 +8,7 @@ import { TooltipsPopovers } from './tooltips-popovers/tooltips-popovers';
 
 @Component({
   selector: 'app-basic-modal',
-  imports: [CommonModule, OpenModalEdmin, ScrollingContent, Simple, TooltipsPopovers],
+  imports: [OpenModalEdmin, ScrollingContent, Simple, TooltipsPopovers],
   templateUrl: './basic-modal.html',
   styleUrl: './basic-modal.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { SlicePipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -7,7 +7,7 @@ import { NavmenuService, Menu } from '../../../services/navmenu.service';
 
 @Component({
   selector: 'app-bookmark',
-  imports: [CommonModule, RouterModule, FormsModule],
+  imports: [RouterModule, FormsModule, SlicePipe],
   templateUrl: './bookmark.html',
   styleUrl: './bookmark.scss',
 })

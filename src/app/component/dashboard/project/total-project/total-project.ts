@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import { TotalProjects } from '../../../../shared/data/dashboard/project/project
 
 @Component({
   selector: 'app-total-project',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './total-project.html',
   styleUrl: './total-project.scss',
 })

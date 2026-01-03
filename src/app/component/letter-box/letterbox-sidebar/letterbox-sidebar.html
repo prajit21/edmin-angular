@@ -12,7 +12,7 @@
                                 <ul class="nav nav-pills main-menu email-category">
                                     @for( data of email; track data){
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="inbox-pill-tab" [ngClass]="{'active': data.status}" (click)="letterbox(data)">
+                                        <a class="nav-link active" id="inbox-pill-tab" [class.active]="data.status" (click)="letterbox(data)">
                                             <svg class="feather stroke-{{data.color}} stroke-icon">
                                                 <use
                                                     attr.xlink:href="assets/svg/feather-icons/dist/feather-sprite.svg#{{ data.icon }}">

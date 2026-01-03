@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Feathericon } from '../../../../shared/component/feathericon/featherico
 
 @Component({
   selector: 'app-calender',
-  imports: [CommonModule, NgbModule, Feathericon, RouterModule],
+  imports: [NgbModule, Feathericon, RouterModule],
   templateUrl: './calender.html',
   styleUrl: './calender.scss',
 })

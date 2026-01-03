@@ -19,7 +19,7 @@
                                <h6 class="f-w-500">Progress </h6><span class="f-w-500 f-14">{{data.percentage}}</span>
                            </div>
                            <div class="progress mt-2 progress-striped-{{data.class}}">
-                               <div class="progress-bar" [ngStyle]="{'width':data.value}"></div>
+                               <div class="progress-bar" [style.width]="data.value"></div>
                            </div>
                        </div>
                        <div class="customer d-inline-block avatar-group text-end">

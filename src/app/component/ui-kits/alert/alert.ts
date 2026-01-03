@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AdditionalContent } from './additional-content/additional-content';
@@ -12,14 +12,13 @@ import * as Data from '../../../shared/data/ui-kits/alert';
 @Component({
   selector: 'app-alert',
   imports: [
-    CommonModule,
     AdditionalContent,
     BorderDirectionAlert,
     ColorAlertOutline,
     CommonTopAlerts,
     IconsTextAlerts,
-    LiveAlert,
-  ],
+    LiveAlert
+],
   templateUrl: './alert.html',
   styleUrl: './alert.scss',
 })

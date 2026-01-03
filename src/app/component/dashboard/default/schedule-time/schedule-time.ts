@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 import { Friday } from './friday/friday';
@@ -10,7 +10,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-schedule-time',
-  imports: [CommonModule, Monday, Thursday, Wednesday, Tuesday, Friday, ClickOutsideDirective],
+  imports: [Monday, Thursday, Wednesday, Tuesday, Friday, ClickOutsideDirective, NgClass],
   templateUrl: './schedule-time.html',
   styleUrl: './schedule-time.scss',
 })

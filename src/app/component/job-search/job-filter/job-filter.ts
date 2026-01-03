@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,7 +8,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 
 @Component({
   selector: 'app-job-filter',
-  imports: [CommonModule, NgbModule, ClickOutsideDirective],
+  imports: [NgbModule, ClickOutsideDirective],
   templateUrl: './job-filter.html',
   styleUrl: './job-filter.scss',
 })

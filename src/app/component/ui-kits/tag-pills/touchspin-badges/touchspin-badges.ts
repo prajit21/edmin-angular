@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-touchspin-badges',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './touchspin-badges.html',
   styleUrl: './touchspin-badges.scss',
 })

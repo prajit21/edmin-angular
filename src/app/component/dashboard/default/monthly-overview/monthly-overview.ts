@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import { MonthlyOverviews } from '../../../../shared/data/dashboard/default/defa
 
 @Component({
   selector: 'app-monthly-overview',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './monthly-overview.html',
   styleUrl: './monthly-overview.scss',
 })

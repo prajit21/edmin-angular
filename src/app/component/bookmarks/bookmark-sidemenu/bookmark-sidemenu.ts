@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, output } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -10,7 +10,7 @@ import { NewBookmark } from '../bookmark-modal/new-bookmark/new-bookmark';
 
 @Component({
   selector: 'app-bookmark-sidemenu',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './bookmark-sidemenu.html',
   styleUrl: './bookmark-sidemenu.scss',
 })

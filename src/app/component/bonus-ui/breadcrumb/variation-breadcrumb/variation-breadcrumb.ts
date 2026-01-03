@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-variation-breadcrumb',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './variation-breadcrumb.html',
   styleUrl: './variation-breadcrumb.scss',
 })

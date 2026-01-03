@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { basicCheckbox, simpleRadio } from '../../../../shared/data/form-control
 
 @Component({
   selector: 'app-basic-radio-checkbox',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './basic-radio-checkbox.html',
   styleUrl: './basic-radio-checkbox.scss',
 })

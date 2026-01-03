@@ -1,7 +1,7 @@
 <div class="left-arrow" id="left-arrow" [class.d-none]="leftArrowNone" (click)="scrollToLeft()">
     <app-feather-icon [icon]="'arrow-left'" />
 </div>
-<div id="sidebar-menu" [ngStyle]="{ marginLeft: this.layout.config.settings.sidebar_type === 'horizontal-sidebar' ? margin + 'px' : '0px' }">
+<div id="sidebar-menu" [style.marginLeft]="this.layout.config.settings.sidebar_type === 'horizontal-sidebar' ? margin + 'px' : '0px'">
     <ul class="sidebar-menu d-flex flex-column" id="simple-bar">
         <li class="pin-title sidebar-list p-0" [class.show]="pined">
             <h5 class="sidebar-main-title">Pinned</h5>
@@ -15,7 +15,7 @@
             @if(item.line === true){
             <li class="line"></li>
             }
-            <li [ngClass]="{'sidebar-list':item.level === 1,'sidebar-main-title':item.headTitle1 }"
+            <li [class]="{'sidebar-list':item.level === 1,'sidebar-main-title':item.headTitle1 }"
                 [class.pined]="isPined(item.id)">
                 @if(item.level === 1){
                 <svg class="pinned-icon" (click)="togglePined(item.id)">
@@ -32,7 +32,7 @@
             }
             @else{
             @if(!item.headTitle1){
-            <a [ngClass]="{'sidebar-link' : item.level === 1, 'submenu-title' : item.level === 2 ,'actived': item.active && item.level === 1}"
+            <a [class]="{'sidebar-link' : item.level === 1, 'submenu-title' : item.level === 2 ,'actived': item.active && item.level === 1}"
                 [routerLink]="item.path" (click)="toggleMenu(item)" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact:true}">
                 @if(item.icon && item.level === 1){
@@ -56,7 +56,7 @@
             }
             }
             @if(item.children){
-            <ul [ngClass]="{ 'sidebar-submenu': item.level === 1, 'according-submenu' : item.level === 2 }"
+            <ul [class]="{ 'sidebar-submenu': item.level === 1, 'according-submenu' : item.level === 2 }"
                 [style.display]="item.active  ? 'block' : 'none'">
                 <ng-container *ngTemplateOutlet="recursiveMenu; context: { $implicit: item.children }" />
             </ul>

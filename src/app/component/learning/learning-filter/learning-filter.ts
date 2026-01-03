@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Categories } from './categories/categories';
@@ -8,7 +8,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 
 @Component({
   selector: 'app-learning-filter',
-  imports: [CommonModule, Categories, FindCource, UpcomingCource, ClickOutsideDirective],
+  imports: [Categories, FindCource, UpcomingCource, ClickOutsideDirective],
   templateUrl: './learning-filter.html',
   styleUrl: './learning-filter.scss',
 })

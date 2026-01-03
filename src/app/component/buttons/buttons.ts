@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ButtonsDescription } from './buttons-description/buttons-description';
@@ -7,7 +7,7 @@ import { ButtonsStyle } from './buttons-style/buttons-style';
 
 @Component({
   selector: 'app-buttons',
-  imports: [CommonModule, ButtonsStyle, ButtonsSize, ButtonsDescription],
+  imports: [ButtonsStyle, ButtonsSize, ButtonsDescription],
   templateUrl: './buttons.html',
   styleUrl: './buttons.scss',
 })

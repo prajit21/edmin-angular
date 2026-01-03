@@ -14,13 +14,13 @@
                             <div class="todo-list-container">
                                 <div class="mark-all-tasks">
                                     <div class="mark-all-tasks-container">
-                                        <span class="mark-all-btn" id="mark-all-finished" [ngClass]="{'move-up':completed}">
+                                        <span class="mark-all-btn" id="mark-all-finished" [class.move-up]="completed">
                                             <span class="btn-label me-1">Mark all as finished</span>
                                             <span class="action-box completed" (click)="markAllAction(true);">
                                                 <i class="icon"><i class="icon-check"></i></i>
                                             </span>
                                         </span>
-                                        <span class="mark-all-btn move-down" id="mark-all-incomplete" [ngClass]="{'move-down':!completed}">
+                                        <span class="mark-all-btn move-down" id="mark-all-incomplete" [class.move-down]="!completed">
                                             <span class="btn-label me-1">Mark all as Incomplete</span>
                                             <span class="action-box" (click)="markAllAction(false);"> 
                                                 <i class="icon"><i class="icon-check"></i></i></span>
@@ -47,7 +47,7 @@
                                     </div>
                                     <ul id="todo-list">
                                      @for(task of taskData; track task; let i= $index){
-                                        <li class="task" [ngClass]="{'completed':task.completed ? task.completed : completed}">
+                                        <li class="task" [class.completed]="task.completed ? task.completed : completed">
                                             <div class="task-container">
                                             <h4 class="task-label">{{task.text}}</h4>
                                               <div class="notification-popup primary" [ngClass]="taskCompletedAlert ? 'show' : 'hide'" style="z-index: 9;">

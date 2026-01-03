@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BasicPopover } from './basic-popover/basic-popover';
@@ -7,7 +7,7 @@ import { PopoverOffset } from './popover-offset/popover-offset';
 
 @Component({
   selector: 'app-popover',
-  imports: [CommonModule, PopoverDirection, BasicPopover, PopoverOffset],
+  imports: [PopoverDirection, BasicPopover, PopoverOffset],
   templateUrl: './popover.html',
   styleUrl: './popover.scss',
 })

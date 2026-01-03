@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -8,7 +8,7 @@ import { OrderChartOption } from '../../../../shared/interface/widgets/chart';
 
 @Component({
   selector: 'app-top-ecommerce-chart',
-  imports: [CommonModule, NgApexchartsModule, Feathericon],
+  imports: [NgApexchartsModule, Feathericon],
   templateUrl: './top-ecommerce-chart.html',
   styleUrl: './top-ecommerce-chart.scss',
 })

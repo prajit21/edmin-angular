@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { SlicePipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -18,7 +18,6 @@ import { SvgIcon } from '../svg-icon/svg-icon';
 @Component({
   selector: 'app-header',
   imports: [
-    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
@@ -31,7 +30,8 @@ import { SvgIcon } from '../svg-icon/svg-icon';
     Bookmark,
     Cart,
     SvgIcon,
-  ],
+    SlicePipe
+],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

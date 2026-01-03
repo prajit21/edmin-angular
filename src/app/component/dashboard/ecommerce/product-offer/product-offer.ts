@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-product-offer',
-  imports: [CommonModule, RouterModule, ClickOutsideDirective, CarouselModule],
+  imports: [RouterModule, ClickOutsideDirective, CarouselModule],
   templateUrl: './product-offer.html',
   styleUrl: './product-offer.scss',
 })

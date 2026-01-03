@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ExtraLargeModal } from './extra-large-modal/extra-large-modal';
@@ -8,7 +8,7 @@ import { FullScreenModal } from '../sizes-modal/full-screen-modal/full-screen-mo
 
 @Component({
   selector: 'app-sizes-modal',
-  imports: [CommonModule, SmallModal, LargeModal, ExtraLargeModal, FullScreenModal],
+  imports: [SmallModal, LargeModal, ExtraLargeModal, FullScreenModal],
   templateUrl: './sizes-modal.html',
   styleUrl: './sizes-modal.scss',
 })

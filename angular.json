@@ -17,6 +17,14 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "leaflet",
+              "masonry-layout",
+              "dropzone",
+              "feather-icons",
+              "sweetalert2",
+              "apexcharts"
+            ],
             "stylePreprocessorOptions": {
               "sass": {
                 "silenceDeprecations": ["color-functions", "global-builtin", "import"]

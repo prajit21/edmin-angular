@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonWidgetsChart } from './common-widgets-chart/common-widgets-chart';
@@ -31,8 +30,8 @@ import * as chartData from '../../../shared/data/widgets/chart';
     StockMarket,
     Uses,
     CryptAnnotations,
-    TrunOver
-],
+    TrunOver,
+  ],
   templateUrl: './chart.html',
   styleUrl: './chart.scss',
 })

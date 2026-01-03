@@ -1,4 +1,3 @@
-
 import { Component, input } from '@angular/core';
 
 import { articlesAndVideos } from '../../../shared/data/faq/faq';

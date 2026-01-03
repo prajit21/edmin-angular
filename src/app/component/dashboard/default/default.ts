@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AllInvoices } from './all-invoices/all-invoices';
@@ -33,8 +32,8 @@ import { TotalClients, NewProject } from '../../../shared/data/dashboard/default
     TopCommonChart,
     TotalEarning,
     TotalInvestment,
-    TotalVisit
-],
+    TotalVisit,
+  ],
   templateUrl: './default.html',
   styleUrl: './default.scss',
 })

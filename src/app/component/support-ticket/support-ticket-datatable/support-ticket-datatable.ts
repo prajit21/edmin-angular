@@ -21,8 +21,8 @@ import { SupportTicketService } from '../../../shared/services/support-ticket.se
     NgbModule,
     AsyncPipe,
     DecimalPipe,
-    NgClass
-],
+    NgClass,
+  ],
   providers: [SupportTicketService, DecimalPipe],
   templateUrl: './support-ticket-datatable.html',
   styleUrl: './support-ticket-datatable.scss',

@@ -30,8 +30,8 @@ import { SvgIcon } from '../svg-icon/svg-icon';
     Bookmark,
     Cart,
     SvgIcon,
-    SlicePipe
-],
+    SlicePipe,
+  ],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

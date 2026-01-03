@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Animated } from './animated/animated';
@@ -11,14 +10,7 @@ import * as data from '../../../shared/data/ui-kits/tag-pills';
 
 @Component({
   selector: 'app-tag-pills',
-  imports: [
-    Animated,
-    BadgeHeadings,
-    BadgesButtons,
-    Center,
-    CommonBadgePills,
-    TouchspinBadges
-],
+  imports: [Animated, BadgeHeadings, BadgesButtons, Center, CommonBadgePills, TouchspinBadges],
   templateUrl: './tag-pills.html',
   styleUrl: './tag-pills.scss',
 })

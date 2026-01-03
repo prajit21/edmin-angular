@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ColoredBreadcrumb } from './colored-breadcrumb/colored-breadcrumb';
@@ -16,8 +15,8 @@ import { VariationBreadcrumb } from './variation-breadcrumb/variation-breadcrumb
     DividerBreadcrumb,
     IconsBreadcrumb,
     OutlineBreadcrumb,
-    VariationBreadcrumb
-],
+    VariationBreadcrumb,
+  ],
   templateUrl: './breadcrumb.html',
   styleUrl: './breadcrumb.scss',
 })

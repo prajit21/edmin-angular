@@ -5,7 +5,7 @@
   background: url(../../images/other-images/coming-soon-bg.jpg);
   background-position: bottom;
   background-size: cover;
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-blend-mode: overlay;
     background-color: rgba($black, 82%);
   }
@@ -16,7 +16,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: 50px 0;
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-blend-mode: overlay;
     background-color: rgba($black, 83%);
   }

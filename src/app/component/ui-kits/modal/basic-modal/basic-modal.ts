@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { OpenModalEdmin } from './open-modal-edmin/open-modal-edmin';

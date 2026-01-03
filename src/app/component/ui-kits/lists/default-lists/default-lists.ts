@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { HorizontalLists } from '../../../../shared/data/ui-kits/lists';

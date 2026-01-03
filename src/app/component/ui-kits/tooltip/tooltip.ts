@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BasicTooltip } from './basic-tooltip/basic-tooltip';
@@ -18,8 +17,8 @@ import { WonkyTooltip } from './wonky-tooltip/wonky-tooltip';
     HtmlElementsClickEvent,
     ImageTooltip,
     TooltipDirections,
-    WonkyTooltip
-],
+    WonkyTooltip,
+  ],
   templateUrl: './tooltip.html',
   styleUrl: './tooltip.scss',
 })

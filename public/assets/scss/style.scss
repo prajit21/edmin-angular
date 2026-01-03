@@ -15,7 +15,6 @@
 @import './utils/mixins';
 @import './utils/key-frames';
 
-
 // *** base ***
 @import './base/reset';
 @import './base/typography';
@@ -109,14 +108,14 @@
 @import './pages/starterkit';
 @import './pages/general-widget';
 @import './pages/landing';
-@import'./pages/language';
-// // *** Layout *** 
+@import './pages/language';
+// // *** Layout ***
 @import './layout/sidebar';
 @import './layout/header';
 @import './layout/footer';
 @import './layout/select2';
 @import './layout/search';
 @import './layout/box-layout';
-// // *** Themes *** 
+// // *** Themes ***
 @import './themes/rtl';
-@import "./themes/theme-customizer";
+@import './themes/theme-customizer';

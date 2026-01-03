@@ -3,7 +3,7 @@
 ==========================**/
 .popover {
   border: var(--light-border);
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-color: var(--body-color);
     --bs-popover-header-bg: unset;
   }
@@ -14,7 +14,7 @@
   color: var(--theme-deafult);
 }
 .common-flex {
-  @include common_flex_gap
+  @include common_flex_gap;
 }
 .popover-main {
   .btn-showcase {
@@ -32,7 +32,7 @@
   background-color: rgba($white, 1);
   border: var(--light-border);
   color: var(--theme-deafult);
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-color: var(--body-color);
   }
 }
@@ -42,38 +42,38 @@
   }
 }
 // popover dark css
-.bs-popover-auto{
-  &[data-popper-placement^=left]{
-    > .popover-arrow::after{
-      [data-theme="dark"] & {
+.bs-popover-auto {
+  &[data-popper-placement^='left'] {
+    > .popover-arrow::after {
+      [data-theme='dark'] & {
         border-left-color: var(--body-color);
       }
     }
   }
-  &[data-popper-placement^=top]{
-    > .popover-arrow::after{
-      [data-theme="dark"] & {
+  &[data-popper-placement^='top'] {
+    > .popover-arrow::after {
+      [data-theme='dark'] & {
         border-top-color: var(--body-color);
       }
     }
   }
-  &[data-popper-placement^=right]{
-    > .popover-arrow::after{
-      [data-theme="dark"] & {
+  &[data-popper-placement^='right'] {
+    > .popover-arrow::after {
+      [data-theme='dark'] & {
         border-right-color: var(--body-color);
       }
     }
   }
-  &[data-popper-placement^=bottom]{
-    > .popover-arrow::after{
-      [data-theme="dark"] & {
+  &[data-popper-placement^='bottom'] {
+    > .popover-arrow::after {
+      [data-theme='dark'] & {
         border-bottom-color: var(--body-color);
       }
     }
   }
 }
-.popover-body{
-  [data-theme="dark"] & {
+.popover-body {
+  [data-theme='dark'] & {
     color: var(--light-font);
   }
 }
@@ -83,47 +83,46 @@ $colors: (
   secondary: $secondary-color,
   tertiary: $tertiary-color,
   warning: $warning-color,
-  info: $info-color, 
-  success: $success-color, 
+  info: $info-color,
+  success: $success-color,
   danger: $danger-color,
   light: $light-color,
-  dark: $dark-color
+  dark: $dark-color,
 );
 @each $key, $val in $colors {
-  .colored-tooltip{
+  .colored-tooltip {
     .btn-#{$key} {
       --bs-tooltip-bg: $val;
     }
   }
-  
 }
 
 .custom-tooltip {
   --bs-tooltip-bg: $primary-color;
 }
-.wonky-tooltip{
-  form{
+.wonky-tooltip {
+  form {
     display: flex;
     gap: 20px;
     @include media-breakpoint-down(sm) {
       flex-wrap: wrap;
     }
   }
-  .input-group{
+  .input-group {
     width: 280px;
-    @include media-breakpoint-between(sm , md) {
-      width: 188px; 
+    @include media-breakpoint-between(sm, md) {
+      width: 188px;
     }
     @include media-breakpoint-down(sm) {
       width: 220px;
     }
-    input{
+    input {
       background-color: var(--light-color);
     }
-    .input-group-text{
+    .input-group-text {
       position: relative;
       transition: all 0.4s ease-in;
-      .tooltip{
+      .tooltip {
         display: none;
         position: absolute;
         top: -62px;
@@ -134,8 +133,8 @@ $colors: (
           right: -30px;
         }
       }
-      &:hover{
-        .tooltip{
+      &:hover {
+        .tooltip {
           display: block;
           padding: 10px;
           opacity: 1;
@@ -145,13 +144,13 @@ $colors: (
       }
     }
   }
-  
+
   @keyframes shake {
-    0% { 
+    0% {
       transform: rotate(2deg);
     }
     50% {
-     transform: rotate(-3deg);
+      transform: rotate(-3deg);
     }
     70% {
       transform: rotate(3deg);

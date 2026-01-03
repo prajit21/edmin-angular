@@ -8,11 +8,11 @@
   min-height: 100vh;
   text-align: center;
   background-color: var(--card-color);
-    &.maintenance-bg {
+  &.maintenance-bg {
     background-image: url(../../images/other-images/maintenance-bg.jpg);
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: overlay;
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       background-color: var(--card-color);
     }
   }
@@ -87,7 +87,7 @@
 }
 @media (max-width: 1199px) {
   .error-wrapper {
-    .maintenance-heading{
+    .maintenance-heading {
       .headline {
         font-size: 60px;
         margin-bottom: 15px;
@@ -115,7 +115,7 @@
 }
 @media (max-width: 767px) {
   .error-wrapper {
-    .maintenance-heading{
+    .maintenance-heading {
       .headline {
         font-size: 35px;
         margin-bottom: 10px;
@@ -132,7 +132,7 @@
 }
 @media (max-width: 575px) {
   .error-wrapper {
-    .maintenance-heading{
+    .maintenance-heading {
       .headline {
         font-size: 25px;
         letter-spacing: 2px;

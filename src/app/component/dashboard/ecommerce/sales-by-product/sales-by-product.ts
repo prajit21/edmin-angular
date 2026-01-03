@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { SalesProduct } from '../../../../shared/data/dashboard/ecommerce/ecommerce';

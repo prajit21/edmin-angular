@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import * as data from '../../../../shared/data/ui-kits/alert';

@@ -3,7 +3,7 @@
 ==========================**/
 .nav-pills {
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: var(--theme-deafult);
   }
 }
@@ -15,30 +15,30 @@
 .flex-space {
   display: flex;
   gap: 16px;
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     justify-content: center;
   }
 }
 .tab-img {
   height: 100px;
 }
-.nav{
+.nav {
   @include media-breakpoint-down(sm) {
     display: inherit;
     text-align: center;
     border-bottom: none;
-    &.nav-tabs{
-      .nav-link{
+    &.nav-tabs {
+      .nav-link {
         border-top: 0;
         border-bottom: 0;
       }
     }
   }
 }
-.nav-tabs{
-  .nav-item{
-    .nav-link{
-      svg.svg-color{
+.nav-tabs {
+  .nav-item {
+    .nav-link {
+      svg.svg-color {
         width: 16px;
         height: 16px;
         margin-right: 4px;
@@ -46,19 +46,19 @@
       }
     }
   }
-  .nav-link{
-    [data-theme="dark"] & {
+  .nav-link {
+    [data-theme='dark'] & {
       color: var(--light-font) !important;
     }
-    &.active{
+    &.active {
       font-weight: 500;
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: var(--theme-deafult) !important;
       }
     }
   }
 }
-.rating{
+.rating {
   stroke: $warning-color;
   fill: $warning-color;
 }
@@ -67,44 +67,30 @@ $colors: (
   secondary: $secondary-color,
   tertiary: $tertiary-color,
   warning: $warning-color,
-  info: $info-color, 
-  success: $success-color, 
+  info: $info-color,
+  success: $success-color,
   danger: $danger-color,
   light: $light-color,
-  dark: $dark-color
+  dark: $dark-color,
 );
 @each $key, $val in $colors {
   .nav-#{$key} {
-    .nav-link{
+    .nav-link {
       color: $val;
-      &.active{
+      &.active {
         background-color: $val;
         color: var(--white);
       }
-      svg{
+      svg {
         stroke: $val;
       }
     }
   }
 }
-$tabs-name: primary,
-  secondary,
-  tertiary,
-  success,
-  danger,
-  warning,
-  info,
-  light,
-  dark;
-$tab-color : $primary-color,
-$secondary-color,
-$tertiary-color,
-$success-color,
-$danger-color,
-$warning-color,
-$info-color,
-$light-color,
-$dark-color;
+$tabs-name: primary, secondary, tertiary, success, danger, warning, info, light, dark;
+$tab-color:
+  $primary-color, $secondary-color, $tertiary-color, $success-color, $danger-color, $warning-color,
+  $info-color, $light-color, $dark-color;
 @each $var in $tabs-name {
   $i: index($tabs-name, $var);
   #bottom-tab {
@@ -140,7 +126,7 @@ $dark-color;
       border: none;
       border-bottom: none;
       transition: 0.3s;
-      @include media-breakpoint-between(xl , xxl) {
+      @include media-breakpoint-between(xl, xxl) {
         padding: 10px 22px;
       }
       @media (min-width: 576px) and (max-width: 1920px) {
@@ -166,7 +152,7 @@ $dark-color;
     color: $dark-color;
   }
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: transparent;
     border-left-color: var(--theme-deafult);
     color: var(--theme-deafult);
@@ -182,7 +168,7 @@ $dark-color;
     text-align: right;
   }
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: transparent;
     border-right-color: var(--theme-deafult);
     color: var(--theme-deafult);
@@ -190,25 +176,10 @@ $dark-color;
     transition: all 0.3s ease;
   }
 }
-$m-nav-name:
-  primary,
-  secondary,
-  tertiary,
-  success,
-  danger,
-  info,
-  light,
-  dark,
-  warning;
-$nav-color: $primary-color,
-  $secondary-color,
-  $tertiary-color,
-  $success-color,
-  $danger-color,
-  $info-color,
-  $light-color,
-  $dark-color,
-  $warning-color;
+$m-nav-name: primary, secondary, tertiary, success, danger, info, light, dark, warning;
+$nav-color:
+  $primary-color, $secondary-color, $tertiary-color, $success-color, $danger-color, $info-color,
+  $light-color, $dark-color, $warning-color;
 @each $var in $m-nav-name {
   $i: index($m-nav-name, $var);
   .border-tab.nav-#{$var} {
@@ -222,7 +193,7 @@ $nav-color: $primary-color,
     .nav-item {
       .nav-link {
         transition: 0.3s;
-        [data-theme="dark"] & {
+        [data-theme='dark'] & {
           color: nth($nav-color, $i) !important;
         }
         &.active,
@@ -236,7 +207,7 @@ $nav-color: $primary-color,
         &:hover {
           color: nth($nav-color, $i) !important;
         }
-        svg{
+        svg {
           stroke: nth($nav-color, $i);
         }
       }
@@ -244,23 +215,23 @@ $nav-color: $primary-color,
   }
   .border-tab.nav-left.nav-#{$var} {
     .nav-link.active,
-    .show>.nav-link {
+    .show > .nav-link {
       border-left-color: nth($nav-color, $i);
       color: nth($nav-color, $i);
     }
   }
   .border-tab.nav-right.nav-#{$var} {
     .nav-link.active,
-    .show>.nav-link {
+    .show > .nav-link {
       border-right-color: nth($nav-color, $i);
       color: nth($nav-color, $i);
     }
   }
 }
-.pills-blogger{
-  .blog-wrapper{
+.pills-blogger {
+  .blog-wrapper {
     border-radius: 12px;
-    .flex-shrink-0{
+    .flex-shrink-0 {
       width: 46px;
       height: 46px;
       border-radius: 12px;
@@ -273,7 +244,7 @@ $nav-color: $primary-color,
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  @media (max-width:1400px) {
+  @media (max-width: 1400px) {
     gap: calc(14px + 21 * (100vw - 320px) / 1080);
   }
   .designer-profile {
@@ -297,7 +268,7 @@ $nav-color: $primary-color,
 .material-wrapper {
   display: flex;
   gap: 12px;
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     flex-direction: column;
     align-items: center;
   }
@@ -314,7 +285,7 @@ $nav-color: $primary-color,
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
-      @include media-breakpoint-between(xl , xxl) {
+      @include media-breakpoint-between(xl, xxl) {
         gap: 8px;
       }
       .inbox-img {
@@ -328,7 +299,7 @@ $nav-color: $primary-color,
     .header-right-inbox {
       display: flex;
       gap: 12px;
-      @include media-breakpoint-between(xl , xxl) {
+      @include media-breakpoint-between(xl, xxl) {
         gap: 5px;
       }
       @media (max-width: 560px) {
@@ -342,12 +313,12 @@ $nav-color: $primary-color,
       padding-bottom: 6px;
       border-bottom: 1px solid var(--solid-border);
       align-items: center;
-      .feather{
+      .feather {
         width: 16px;
         height: 16px;
         fill: var(--body-font-color);
       }
-      @media (max-width:630px) {
+      @media (max-width: 630px) {
         align-items: unset;
       }
     }
@@ -367,8 +338,12 @@ $nav-color: $primary-color,
       border-bottom: 1px solid;
       margin-top: 10px;
       opacity: 0;
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transition:
+        opacity 0.35s,
+        -webkit-transform 0.35s;
+      transition:
+        opacity 0.35s,
+        transform 0.35s;
       -webkit-transform: scale(0, 1);
       transform: scale(0, 1);
     }

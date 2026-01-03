@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BasicAreaChart } from './basic-area-chart/basic-area-chart';
@@ -30,8 +29,8 @@ import { RadialChart } from './radial-chart/radial-chart';
     PolarChart,
     PyramidChart,
     RadarChart,
-    RadialChart
-],
+    RadialChart,
+  ],
   templateUrl: './apex-chart.html',
   styleUrl: './apex-chart.scss',
 })

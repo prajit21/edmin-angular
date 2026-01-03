@@ -7,7 +7,7 @@
     margin-bottom: 0;
   }
   span {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       color: var(--body-font-color);
     }
   }
@@ -25,13 +25,13 @@
       }
       a {
         color: $theme-body-font-color;
-        [data-theme="dark"] & {
+        [data-theme='dark'] & {
           color: var(--light-font);
         }
       }
       &:hover {
         background-color: $light-color;
-        [data-theme="dark"] & {
+        [data-theme='dark'] & {
           background-color: rgba($primary-color, 0.1);
         }
       }
@@ -40,7 +40,7 @@
 }
 .upcoming-course {
   .d-flex {
-    +.d-flex {
+    + .d-flex {
       margin-top: 15px;
     }
   }
@@ -60,7 +60,7 @@
           &:first-child {
             padding-right: 30px;
           }
-          +li {
+          + li {
             padding-left: 30px;
           }
         }
@@ -74,7 +74,7 @@
   }
   .upcoming-course {
     .d-flex {
-      +.d-flex {
+      + .d-flex {
         margin-top: 20px;
       }
     }
@@ -86,7 +86,7 @@
   }
   .upcoming-course {
     .d-flex {
-      +.d-flex {
+      + .d-flex {
         margin-top: 15px;
       }
     }

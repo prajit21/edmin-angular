@@ -1,4 +1,3 @@
-
 import { Component, Input, SimpleChanges, inject, input, viewChild } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';

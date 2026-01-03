@@ -1,7 +1,7 @@
 /**=====================
   2.26 Ribbon CSS Start
 ==========================**/
-[class*="ribbon-wrapper"] {
+[class*='ribbon-wrapper'] {
   position: relative;
   padding: 58px 18px 28px 18px;
   color: var(--body-font-color);
@@ -34,7 +34,7 @@
     left: 0;
     width: 0;
     height: 0;
-    content: "";
+    content: '';
     border: 7px solid transparent;
     border-top-color: $dark-color;
     border-right-color: $dark-color;
@@ -83,7 +83,7 @@
     right: 0;
     width: 0;
     height: 0;
-    content: "";
+    content: '';
     border: 7px solid transparent;
     border-top-color: $dark-color;
     border-right-color: $dark-color;
@@ -99,7 +99,7 @@
     left: 0;
     width: 0;
     height: 0;
-    content: "";
+    content: '';
     border: 7px solid transparent;
     border-top-color: $dark-color;
     border-right-color: $dark-color;
@@ -116,7 +116,7 @@
     right: 0;
     width: 0;
     height: 0;
-    content: "";
+    content: '';
     border: 7px solid transparent;
     border-top-color: $dark-color;
     border-right-color: $dark-color;
@@ -148,7 +148,7 @@
   top: -2px;
   left: auto;
   right: 20px;
-  [dir="rtl"] & {
+  [dir='rtl'] & {
     left: auto !important;
     right: 20px !important;
   }
@@ -163,15 +163,10 @@
     border-bottom: 10px solid transparent;
   }
 }
-@each $ribbon-name,
-$ribbon-color in (primary, $primary-color),
-(secondary, $secondary-color),
-(success, $success-color),
-(danger, $danger-color),
-(info, $info-color),
-(light, $light-color),
-(dark, $dark-color),
-(warning, $warning-color) {
+@each $ribbon-name, $ribbon-color in (primary, $primary-color), (secondary, $secondary-color),
+  (success, $success-color), (danger, $danger-color), (info, $info-color), (light, $light-color),
+  (dark, $dark-color), (warning, $warning-color)
+{
   .ribbon-#{$ribbon-name} {
     background: $ribbon-color;
   }
@@ -247,7 +242,7 @@ $ribbon-color in (primary, $primary-color),
 .ribbon-wrapper-bottom {
   &.bg-light-dark {
     p {
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: var(--white) !important;
       }
     }

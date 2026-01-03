@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { SvgIcon } from '../../../../shared/component/svg-icon/svg-icon';

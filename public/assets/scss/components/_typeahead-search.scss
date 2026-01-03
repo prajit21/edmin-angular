@@ -23,12 +23,12 @@
 
 .u-cf {
   &:before {
-    content: " ";
+    content: ' ';
     display: table;
   }
 
   &:after {
-    content: " ";
+    content: ' ';
     display: table;
     clear: both;
   }
@@ -50,7 +50,7 @@
   color: #c5c5c5;
 }
 
-.ProfileCard-avatar { 
+.ProfileCard-avatar {
   svg {
     width: 18px;
     height: 18px;
@@ -67,7 +67,7 @@
   }
 }
 
-.Typeahead-hint { 
+.Typeahead-hint {
   width: 100%;
   padding: 5px 8px;
   font-size: 24px;
@@ -87,18 +87,18 @@
   position: absolute;
   top: 100%;
   left: 0px;
-  [dir="rtl"] & {
+  [dir='rtl'] & {
     right: 0;
     left: unset;
   }
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     color: var(--light-font);
-    background-color: var(--card-color); 
+    background-color: var(--card-color);
     border-color: var(--solid-border);
   }
-  .ProfileCard {  
-    [data-theme="dark"] & {
-      border-color: var(--solid-border) !important; 
+  .ProfileCard {
+    [data-theme='dark'] & {
+      border-color: var(--solid-border) !important;
     }
     &:hover {
       background-color: var(--body-color);
@@ -109,7 +109,7 @@
   display: none;
   width: 100%;
   @include media-breakpoint-down(xl) {
-    width: 275px; 
+    width: 275px;
   }
   max-height: 237px;
   overflow: auto;
@@ -119,7 +119,6 @@
 
 .Typeahead-menu.is-open {
   display: block;
-
 }
 
 .Typeahead-selectable {
@@ -161,7 +160,7 @@
   position: absolute;
   border-radius: 5px;
   left: 10px;
-  [dir="rtl"] & {
+  [dir='rtl'] & {
     right: 10px;
     left: unset;
   }
@@ -172,7 +171,7 @@
 
 .ProfileCard-details {
   padding-left: 35px;
-  [dir="rtl"] & {
+  [dir='rtl'] & {
     padding-right: 35px;
     padding-left: unset;
   }
@@ -181,13 +180,12 @@
 
 .ProfileCard-realName {
   display: inline-block;
-  // color: $dark-gray; 
-  a{
+  // color: $dark-gray;
+  a {
     color: var(--body-font-color);
   }
-  .pull-right{
-line-height: 1;
-
+  .pull-right {
+    line-height: 1;
   }
 }
 
@@ -251,10 +249,9 @@ line-height: 1;
   height: 1rem;
 }
 
-
-// typehead new search 
+// typehead new search
 $color_1: #333;
-$color_2: #fff; 
+$color_2: #fff;
 $color_3: #aaa;
 $background-color_1: #fff;
 $background-color_2: #444;
@@ -275,7 +272,6 @@ $background-color_4: #eee;
   padding: 0;
   margin: 0;
   list-style-type: none;
-
 }
 
 .sey-show {
@@ -324,8 +320,8 @@ $background-color_4: #eee;
   padding: 7px;
 }
 
-.bookmark-flip{
-  .Typeahead-menu{
+.bookmark-flip {
+  .Typeahead-menu {
     overflow: auto;
     height: 114px;
     top: 106px;
@@ -336,8 +332,8 @@ $background-color_4: #eee;
 header {
   .custom-menu {
     .back .bookmark {
-      .Typeahead-menu{
-        &.is-open{
+      .Typeahead-menu {
+        &.is-open {
           z-index: 0;
           overflow: auto;
           height: 180px !important;

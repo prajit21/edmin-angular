@@ -1,11 +1,11 @@
 .my-gallery {
   img {
     width: 100%;
-    &.img-thumbnail{
+    &.img-thumbnail {
       border: var(--light-border);
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         border-color: var(--light-font) !important;
-        }
+      }
     }
   }
   .pswp-gallery {
@@ -21,14 +21,14 @@
     img {
       padding: 10px !important;
       border: var(--light-border) !important;
-      border-bottom: none ! important;
+      border-bottom: none !important;
       border-radius: 5px 5px 0 0;
       // [data-theme="dark"] & {
       //   border-color: var(--light-font) !important;
       //   }
     }
     a {
-      >div {
+      > div {
         border-top: none !important;
         margin-bottom: 0;
         padding: 5px 10px 10px 10px;
@@ -42,17 +42,17 @@
     figure {
       &.img-hover {
         a {
-          >div {
+          > div {
             overflow: hidden;
           }
         }
         &.hover-12 {
           a {
-            >div {
+            > div {
               background: var(--theme-deafult);
               &:hover {
                 img {
-                  opacity: .7;
+                  opacity: 0.7;
                 }
               }
             }
@@ -98,7 +98,7 @@
 .pswp__dynamic-caption {
   h4 {
     color: $white;
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       color: var(--body-font-color);
     }
   }
@@ -115,11 +115,11 @@
     }
   }
 }
-.pswp__img{
+.pswp__img {
   object-fit: cover;
 }
-section{
-  &.pswp__scroll-wrap{
-      margin: 0 !important;
+section {
+  &.pswp__scroll-wrap {
+    margin: 0 !important;
   }
 }

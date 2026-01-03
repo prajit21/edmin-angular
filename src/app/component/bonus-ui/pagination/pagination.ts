@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ActiveDisabledPagination } from './active-disabled-pagination/active-disabled-pagination';
@@ -16,8 +15,8 @@ import { SizingPagination } from './sizing-pagination/sizing-pagination';
     DefaultPagination,
     IconsPagination,
     RoundedPagination,
-    SizingPagination
-],
+    SizingPagination,
+  ],
   templateUrl: './pagination.html',
   styleUrl: './pagination.scss',
 })

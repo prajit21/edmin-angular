@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ButtonsDescription } from './buttons-description/buttons-description';

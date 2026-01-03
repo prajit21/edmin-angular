@@ -4,15 +4,15 @@
 }
 
 .choices__list[aria-expanded] {
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background: var(--body-color);
     border-color: var(--solid-border);
   }
 }
 
-.choices[data-type*=select-one] {
+.choices[data-type*='select-one'] {
   .choices__input {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       background: var(--body-color);
       border-color: var(--solid-border);
     }
@@ -22,14 +22,14 @@
 .choices__input {
   background: var(--light-color);
 
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background: var(--body-color);
   }
 }
 
-.choices[data-type*=select-one] {
+.choices[data-type*='select-one'] {
   &::after {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       border-color: var(--solid-border) transparent transparent;
     }
   }
@@ -37,7 +37,7 @@
 
 .choices__list--dropdown {
   .choices__item--selectable.is-highlighted {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       background-color: rgba($primary-color, 0.1);
     }
   }
@@ -45,14 +45,14 @@
 
 .choices__list[aria-expanded] {
   .choices__item--selectable.is-highlighted {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       background-color: rgba($primary-color, 0.1);
     }
   }
 }
 
 .choices__heading {
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     border-color: var(--solid-border);
   }
 }
@@ -60,7 +60,7 @@
 .theme-form {
   .form-control {
     &::placeholder {
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: var(--light-font);
       }
     }
@@ -69,7 +69,7 @@
 
 .choices__item {
   &.choices__item--selectable {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       color: var(--body-font-color);
     }
   }
@@ -94,14 +94,14 @@
   color: var(--bs-heading-color);
 }
 
-.choices[data-type*=text] {
+.choices[data-type*='text'] {
   .choices__button {
     margin-bottom: 0;
     border-left: 0;
   }
 }
 
-.choices[data-type*=select-multiple] {
+.choices[data-type*='select-multiple'] {
   .choices__button {
     margin-bottom: 0;
     border-left: 0;

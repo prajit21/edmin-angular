@@ -142,7 +142,7 @@
           }
           &:after {
             background-color: var(--theme-deafult);
-            content: "";
+            content: '';
             position: absolute;
             display: block;
             height: 3px;
@@ -284,7 +284,11 @@
           font-weight: 600;
           line-height: 1.2;
           .gradient-1 {
-            background: linear-gradient(92deg, var(--theme-deafult) 2.7%, var(--theme-secondary) 53.71%);
+            background: linear-gradient(
+              92deg,
+              var(--theme-deafult) 2.7%,
+              var(--theme-secondary) 53.71%
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 600;
@@ -555,10 +559,10 @@
               top: -28%;
             }
             @media (max-width: 1580px) {
-              top: -33%
+              top: -33%;
             }
             @media (max-width: 1590px) {
-              top: -32%
+              top: -32%;
             }
           }
           .arrow-decore {
@@ -567,10 +571,10 @@
             left: 28%;
             z-index: -1;
             @media (max-width: 1860px) {
-              top: -15%
+              top: -15%;
             }
             @media (max-width: 1580px) {
-              top: -18%
+              top: -18%;
             }
             img {
               @media (max-width: 1240px) {
@@ -617,7 +621,7 @@
               -webkit-text-fill-color: transparent;
               color: var(--landing-outline-text);
               text-transform: uppercase;
-              font-family: "Roboto", sans-serif;
+              font-family: 'Roboto', sans-serif;
               font-weight: 700;
               font-size: 120px;
               @media (max-width: 1860px) {
@@ -642,7 +646,7 @@
         border: 18px solid rgba($primary-color, 0.1);
         border-bottom: unset;
         border-radius: 10px 10px 0px 0px;
-        filter: drop-shadow(0px 4px 18px rgba($black, 0.10));
+        filter: drop-shadow(0px 4px 18px rgba($black, 0.1));
         transition: all 0.5s ease;
         .layout-img {
           border: 5px solid $white;
@@ -720,7 +724,7 @@
           &:hover {
             background-color: $white;
             &::before {
-              content: "";
+              content: '';
               position: absolute;
               height: 100%;
               width: 100%;
@@ -872,7 +876,7 @@
           font-family: $body-font;
           font-size: 18px;
           font-weight: 500;
-          @media (max-width:1740px) {
+          @media (max-width: 1740px) {
             text-overflow: ellipsis;
             overflow: hidden;
             display: -webkit-box !important;
@@ -885,7 +889,7 @@
           font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
           color: var(--light-font);
           margin-bottom: unset;
-          @media (max-width:1860px) {
+          @media (max-width: 1860px) {
             text-overflow: ellipsis;
             overflow: hidden;
             display: -webkit-box !important;
@@ -906,7 +910,9 @@
         }
         &:hover {
           background-color: var(--theme-deafult);
-          box-shadow: 0 10px 20px rgba($primary-color, 0.19), 0 6px 6px rgba($primary-color, 0.23);
+          box-shadow:
+            0 10px 20px rgba($primary-color, 0.19),
+            0 6px 6px rgba($primary-color, 0.23);
           .icon-wrraper {
             background-color: $white;
             svg {
@@ -957,7 +963,7 @@
       }
       p {
         color: var(--light-font);
-        font-family: "Outfit", sans-serif;
+        font-family: 'Outfit', sans-serif;
         font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
         font-weight: 400;
         line-height: 1.4;

@@ -104,7 +104,7 @@
         margin-top: 0;
         color: var(--light-text);
         span {
-          +span {
+          + span {
             @include media-breakpoint-down(sm) {
               display: block !important;
             }
@@ -155,8 +155,8 @@
         margin-bottom: 15px;
       }
       .row {
-        div[class^="col-"] {
-          +div[class^="col-"] {
+        div[class^='col-'] {
+          + div[class^='col-'] {
             .select2-container {
               margin-top: 18px;
               @include media-breakpoint-down(sm) {
@@ -165,7 +165,7 @@
             }
           }
           .job-select2 {
-            ~.select2-container {
+            ~ .select2-container {
               margin-top: 0 !important;
             }
           }
@@ -254,7 +254,7 @@
       visibility: hidden;
       z-index: 3;
       width: 280px !important;
-      [dir="rtl"] & {
+      [dir='rtl'] & {
         left: unset;
         right: 0;
       }
@@ -280,7 +280,7 @@
         border: 1px solid var(--solid-border);
         padding: 12px;
       }
-      &.open { 
+      &.open {
         @include media-breakpoint-down(xl) {
           opacity: 1;
           visibility: visible;
@@ -293,7 +293,7 @@
     @include media-breakpoint-down(xl) {
       background-color: $white;
       padding: 20px;
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         background: var(--card-color);
       }
     }
@@ -303,7 +303,7 @@
         background-color: var(--card-color);
       }
       .row {
-        >div {
+        > div {
           &:last-child {
             .card {
               @include media-breakpoint-down(xl) {
@@ -314,7 +314,7 @@
         }
       }
     }
-    
+
     .job-toggle {
       @include media-breakpoint-down(xl) {
         display: block !important;

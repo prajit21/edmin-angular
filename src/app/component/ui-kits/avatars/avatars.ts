@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Grouping } from './grouping/grouping';

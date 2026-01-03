@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { DifferntTagAccordion } from './differnt-tag-accordion/differnt-tag-accordion';
@@ -18,8 +17,8 @@ import { SimpleAccordion } from './simple-accordion/simple-accordion';
     MultipleCollapseAccordion,
     HorizontalAccordion,
     NestedAccordion,
-    DifferntTagAccordion
-],
+    DifferntTagAccordion,
+  ],
   templateUrl: './accordion.html',
   styleUrl: './accordion.scss',
 })

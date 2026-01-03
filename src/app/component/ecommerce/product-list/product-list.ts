@@ -18,8 +18,8 @@ import { ProductListService } from '../../../shared/services/ecommerce/product-l
     ReactiveFormsModule,
     ProductListDirective,
     RouterModule,
-    AsyncPipe
-],
+    AsyncPipe,
+  ],
   providers: [ProductListService, DecimalPipe],
   templateUrl: './product-list.html',
   styleUrl: './product-list.scss',

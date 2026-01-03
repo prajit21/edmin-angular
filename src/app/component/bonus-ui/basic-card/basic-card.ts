@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonSecondaryCard } from './common-secondary-card/common-secondary-card';

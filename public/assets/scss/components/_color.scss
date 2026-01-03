@@ -1,10 +1,11 @@
 /**=====================
      color css start
 ==========================**/
-// circle dot 
-@each $circle-name, $circle-color in (primary, $primary-color),
-  (secondary, $secondary-color),(tertiary, $tertiary-color), (success, $success-color), (warning, $warning-color),
-  (danger, $danger-color), (info, $info-color), (light, $light-color),(dark, var(--body-font-color))
+// circle dot
+@each $circle-name, $circle-color in (primary, $primary-color), (secondary, $secondary-color),
+  (tertiary, $tertiary-color), (success, $success-color), (warning, $warning-color),
+  (danger, $danger-color), (info, $info-color), (light, $light-color),
+  (dark, var(--body-font-color))
 {
   .circle-dot-#{$circle-name} {
     width: 16px;
@@ -12,7 +13,7 @@
     border-radius: 10px;
     border: var(--light-border);
     @include flex_common;
-    span{
+    span {
       width: 8px;
       height: 8px;
       background-color: $circle-color;
@@ -21,9 +22,10 @@
   }
 }
 // font-color
-@each $font-name, $font-color in (primary, $primary-color),
-  (secondary, $secondary-color),(tertiary, $tertiary-color), (success, $success-color), (warning, $warning-color),
-  (danger, $danger-color), (info, $info-color), (light, var(--light-font)),(dark, var(--body-font-color))
+@each $font-name, $font-color in (primary, $primary-color), (secondary, $secondary-color),
+  (tertiary, $tertiary-color), (success, $success-color), (warning, $warning-color),
+  (danger, $danger-color), (info, $info-color), (light, var(--light-font)),
+  (dark, var(--body-font-color))
 {
   .font-#{$font-name} {
     color: $font-color !important;
@@ -41,65 +43,70 @@
     color: $font-color;
   }
 }
-.stroke-white{
+.stroke-white {
   stroke: var(--white);
 }
 .font-dark {
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     color: var(--light-font) !important;
   }
 }
 // background css
-@each $bg-name, $bg-color in (primary, $primary-color),
-  (secondary, $secondary-color), (tertiary, $tertiary-color), (success, $success-color), (warning, $warning-color),
+@each $bg-name, $bg-color in (primary, $primary-color), (secondary, $secondary-color),
+  (tertiary, $tertiary-color), (success, $success-color), (warning, $warning-color),
   (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color)
-  {
-    .bg-#{$bg-name}{
-      background-color: $bg-color !important;
-      color: var(--white);
-      span {
-        [data-theme="dark"] & {
-          color: var(--light-font) !important;
-        }
+{
+  .bg-#{$bg-name} {
+    background-color: $bg-color !important;
+    color: var(--white);
+    span {
+      [data-theme='dark'] & {
+        color: var(--light-font) !important;
       }
-    }
-    .bg-light-#{$bg-name} {
-      background-color: rgba($bg-color, 0.1) !important;
-      color: $bg-color  !important;
-      h1,h2,h3,h4,h5,h6 {
-        color: $bg-color  !important;
-      }
-      span {
-        [data-theme="dark"] & {
-          color: $bg-color !important;
-        }
-      }
-      p{
-        [data-theme="dark"] & {
-          color: $bg-color !important;
-        }
-      }
-    }
-    .dote-#{$bg-name} {
-      background-color: $bg-color;
-      outline: 5px solid rgba($bg-color, 0.25);
-      height: 6px;
     }
   }
-.bg-light-light{
+  .bg-light-#{$bg-name} {
+    background-color: rgba($bg-color, 0.1) !important;
+    color: $bg-color !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $bg-color !important;
+    }
+    span {
+      [data-theme='dark'] & {
+        color: $bg-color !important;
+      }
+    }
+    p {
+      [data-theme='dark'] & {
+        color: $bg-color !important;
+      }
+    }
+  }
+  .dote-#{$bg-name} {
+    background-color: $bg-color;
+    outline: 5px solid rgba($bg-color, 0.25);
+    height: 6px;
+  }
+}
+.bg-light-light {
   background-color: rgba($light-color, 0.6) !important;
   color: var(--body-font-color);
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-color: var(--body-color) !important;
   }
 }
-.bg-light-dark{
+.bg-light-dark {
   background-color: rgba($dark-color, 0.2) !important;
   color: var(--body-font-color);
 }
-.bg-light{
+.bg-light {
   color: var(--body-font-color);
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-color: var(--body-color) !important;
   }
 }
@@ -109,24 +116,24 @@ $colors: (
   secondary: $secondary-color,
   tertiary: $tertiary-color,
   warning: $warning-color,
-  info: $info-color, 
-  success: $success-color, 
+  info: $info-color,
+  success: $success-color,
   danger: $danger-color,
   light: $light-color,
-  dark: $dark-color
+  dark: $dark-color,
 );
 @each $key, $val in $colors {
-    .bg-common-#{$key} {
-      width: 42px;
-      height: 40px;
-      border-radius: 11px;
-      background-color: rgba($val, 0.1);
-      border: 1px solid $val;
-      @include flex_common;
-      svg{
-        stroke: $val;
-      }
+  .bg-common-#{$key} {
+    width: 42px;
+    height: 40px;
+    border-radius: 11px;
+    background-color: rgba($val, 0.1);
+    border: 1px solid $val;
+    @include flex_common;
+    svg {
+      stroke: $val;
     }
+  }
 }
 /**=====================
      color css end

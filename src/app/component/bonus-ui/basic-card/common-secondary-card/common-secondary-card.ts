@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { commonSecondaryData } from '../../../../shared/data/bonus-ui/basic-card';

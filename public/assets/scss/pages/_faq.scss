@@ -32,14 +32,14 @@
       margin-bottom: 0;
     }
   }
-  >div {
-		@include media-breakpoint-down(sm) {
+  > div {
+    @include media-breakpoint-down(sm) {
       width: 100%;
       text-align: center;
       padding: 15px;
       border-right: 10px;
     }
-	}
+  }
   .form-inline {
     background-color: $white;
     width: 500px;
@@ -133,9 +133,9 @@
       border-top-right-radius: 8px !important;
     }
   }
-  span{
+  span {
     &.font-primary {
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: $primary-color !important;
       }
     }
@@ -149,7 +149,6 @@
     }
   }
 
-  
   .faq-image {
     img {
       border-top-left-radius: 8px;
@@ -169,14 +168,14 @@
   }
   .text-inherit {
     color: var(--black);
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       color: var(--body-font-color);
     }
   }
 }
 .faq-accordion.default-according {
   margin-bottom: 30px;
-  
+
   .card {
     .accordion-button {
       background-color: transparent;
@@ -191,7 +190,7 @@
         height: 20px;
         margin-right: 10px;
       }
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: var(--light-font);
       }
     }
@@ -238,9 +237,9 @@
   }
 }
 .faq-form {
-  input{
+  input {
     padding: 12px 0px 12px 40px;
-  } 
+  }
   position: relative;
   .search-icon {
     position: absolute;
@@ -282,7 +281,7 @@
       a {
         padding-left: 40px;
         color: $theme-body-font-color;
-        [data-theme="dark"] & {
+        [data-theme='dark'] & {
           color: var(--light-font);
         }
         i {
@@ -336,12 +335,12 @@
   flex: 1;
   p {
     margin-bottom: 2px;
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       color: var(--light-font);
     }
-    +p {
+    + p {
       color: var(--light-text);
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: var(--light-font);
       }
     }

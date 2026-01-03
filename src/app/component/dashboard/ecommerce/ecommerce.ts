@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BestSellers } from './best-sellers/best-sellers';
@@ -29,8 +28,8 @@ import {
     SalesByProduct,
     SalesSummary,
     TopEcommerceChart,
-    TopSellingProducts
-],
+    TopSellingProducts,
+  ],
   templateUrl: './ecommerce.html',
   styleUrl: './ecommerce.scss',
 })

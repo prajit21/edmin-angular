@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { LatestUpdates } from '../../../shared/data/faq/faq';

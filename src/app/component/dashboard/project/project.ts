@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ActivityReport } from './activity-report/activity-report';
@@ -24,8 +23,8 @@ import { TotalRevenue } from './total-revenue/total-revenue';
     ToDoList,
     TotalClients,
     TotalRevenue,
-    TotalProject
-],
+    TotalProject,
+  ],
   templateUrl: './project.html',
   styleUrl: './project.scss',
 })

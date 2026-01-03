@@ -6,13 +6,15 @@
     p {
       color: $theme-body-font-color;
       font-weight: 400;
-      [data-theme="dark"] & {
-       color: var(--light-font) !important;
-        }
+      [data-theme='dark'] & {
+        color: var(--light-font) !important;
+      }
     }
   }
   .card-body {
-    #demo1, #demo2, #demo3 {
+    #demo1,
+    #demo2,
+    #demo3 {
       margin-left: -15px;
       margin-right: -15px;
     }
@@ -21,9 +23,9 @@
     margin-bottom: 10px;
   }
   .note {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       color: var(--bs-heading-color) !important;
-      }
+    }
     a {
       display: contents;
     }
@@ -34,10 +36,10 @@
   height: auto;
   width: auto;
   line-height: unset;
-  background: var(--light-color); 
+  background: var(--light-color);
   border-bottom: 1px solid var(--solid-border);
   padding: 16px;
-  &.bg-info { 
+  &.bg-info {
     & ~ .kanban-drag {
       padding: 20px;
       background-color: rgba($info-color, 0.3) !important;
@@ -48,31 +50,31 @@
       padding: 20px;
       background-color: rgba($warning-color, 0.3) !important;
     }
-  } 
-  &.bg-success { 
+  }
+  &.bg-success {
     & ~ .kanban-drag {
-      padding: 20px; 
+      padding: 20px;
       background-color: rgba($success-color, 0.3) !important;
     }
   }
 }
-.default-kanban{
-  .kanban-container { 
-    display: flex;
-    width: 100% !important;
-    flex-wrap: wrap;
-  }
-} 
-.custom-board{
-  .kanban-container { 
+.default-kanban {
+  .kanban-container {
     display: flex;
     width: 100% !important;
     flex-wrap: wrap;
   }
 }
-.api-board{
-  .kanban-container { 
-    display: flex; 
+.custom-board {
+  .kanban-container {
+    display: flex;
+    width: 100% !important;
+    flex-wrap: wrap;
+  }
+}
+.api-board {
+  .kanban-container {
+    display: flex;
     width: 100% !important;
     flex-wrap: wrap;
   }
@@ -89,7 +91,7 @@
   // width: calc(100% / 3 - 30px) !important;
   .kanban-drag {
     background: var(--light-color);
-    padding: 20px; 
+    padding: 20px;
   }
 }
 .kanban-item {
@@ -117,7 +119,7 @@
   .kanban-box {
     border: var(--light-border);
     border-radius: 5px;
-    padding: 20px; 
+    padding: 20px;
     position: relative;
     display: block;
     color: inherit;
@@ -125,7 +127,7 @@
     &:hover {
       color: inherit;
     }
-    & + .kanban-box { 
+    & + .kanban-box {
       margin-top: 20px;
     }
     .badge {
@@ -185,37 +187,37 @@
   }
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .jkanban-container{
-    .kanban-container{ 
-      .kanban-board{ 
+  .jkanban-container {
+    .kanban-container {
+      .kanban-board {
         width: calc(100% / 3 - 20px) !important;
       }
     }
-  } 
+  }
 }
-@include media-breakpoint-between(lg,xl) {
-  .jkanban-container{
-    .kanban-container{ 
-      .kanban-board{ 
+@include media-breakpoint-between(lg, xl) {
+  .jkanban-container {
+    .kanban-container {
+      .kanban-board {
         margin: 0 10px !important;
         width: calc(100% / 3 - 20px) !important;
       }
     }
-  } 
+  }
 }
-@include media-breakpoint-down(xl){
+@include media-breakpoint-down(xl) {
   .jkanban-container {
     .btn {
       margin-bottom: 10px;
-    } 
+    }
   }
 }
-@include media-breakpoint-down(lg){
+@include media-breakpoint-down(lg) {
   .kanban-board {
     width: calc(100% / 2 - 30px) !important;
   }
 }
-@include media-breakpoint-down(md){  
+@include media-breakpoint-down(md) {
   .jkanban-container {
     .card-body {
       #demo1 {
@@ -229,7 +231,8 @@
   .kanban-container .kanban-item .kanban-box {
     padding: 10px 15px;
   }
-  .custom-board, .api-board{
+  .custom-board,
+  .api-board {
     .kanban-container {
       .kanban-board {
         width: 90% !important;
@@ -241,15 +244,15 @@
   .kanban-container {
     .kanban-board {
       width: 94% !important;
-      margin: 0px 10px !important; 
+      margin: 0px 10px !important;
     }
-  } 
+  }
 }
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
   .jkanban-container {
-    .kanban-board{
+    .kanban-board {
       margin-bottom: 14px;
-    } 
+    }
     .card-body {
       padding: 15px !important;
     }
@@ -263,7 +266,7 @@
   .jkanban-container {
     .btn {
       margin-left: 0;
-      padding: 6px 16px; 
+      padding: 6px 16px;
     }
   }
 }

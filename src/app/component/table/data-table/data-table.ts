@@ -14,7 +14,14 @@ import { TableService } from '../../../shared/services/table.service';
 
 @Component({
   selector: 'app-data-table',
-  imports: [FormsModule, NgbdSortableHeaderDirective, ReactiveFormsModule, NgbModule, AsyncPipe, DecimalPipe],
+  imports: [
+    FormsModule,
+    NgbdSortableHeaderDirective,
+    ReactiveFormsModule,
+    NgbModule,
+    AsyncPipe,
+    DecimalPipe,
+  ],
   templateUrl: './data-table.html',
   styleUrl: './data-table.scss',
   providers: [TableService, DecimalPipe],

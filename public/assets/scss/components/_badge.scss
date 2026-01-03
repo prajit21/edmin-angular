@@ -1,7 +1,8 @@
 /**=====================
      Badge css start
 ==========================**/
-$colors: (primary: $primary-color,
+$colors: (
+  primary: $primary-color,
   secondary: $secondary-color,
   tertiary: $tertiary-color,
   warning: $warning-color,
@@ -9,9 +10,9 @@ $colors: (primary: $primary-color,
   success: $success-color,
   danger: $danger-color,
   light: $light-color,
-  dark: $dark-color);
-@each $key,
-$val in $colors {
+  dark: $dark-color,
+);
+@each $key, $val in $colors {
   .badge-#{$key} {
     background-color: $val;
     border-color: $val;
@@ -26,7 +27,7 @@ $val in $colors {
     background-color: rgba($val, 0.1);
     color: $val !important;
     span {
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         color: $val !important;
       }
     }
@@ -36,7 +37,7 @@ $val in $colors {
   padding: $badge-padding;
   font-family: $body-font, $font-serif;
   font-weight: 500;
-  &+.badge {
+  & + .badge {
     margin-left: 5px;
   }
   svg {
@@ -72,7 +73,7 @@ $val in $colors {
           stroke: var(--white);
         }
       }
-      +button {
+      + button {
         margin-left: -4px;
       }
     }
@@ -103,9 +104,9 @@ $val in $colors {
         bottom: -10px;
       }
     }
-    +li {
+    + li {
       margin-left: 14px;
-      [dir="rtl"] & {
+      [dir='rtl'] & {
         margin-left: unset;
         margin-right: 14px;
       }
@@ -124,9 +125,9 @@ $val in $colors {
   ul {
     li {
       position: relative;
-      +li {
+      + li {
         margin-left: 14px;
-        [dir="rtl"] & {
+        [dir='rtl'] & {
           margin-left: unset;
           margin-right: 14px;
         }
@@ -172,7 +173,7 @@ $val in $colors {
           &.feather {
             width: 14px;
             height: 14px;
-            [data-theme="dark"] & {
+            [data-theme='dark'] & {
               stroke: var(--black);
             }
           }
@@ -199,7 +200,7 @@ $val in $colors {
         &.feather {
           width: 16px;
           height: 16px;
-          [data-theme="dark"] & {
+          [data-theme='dark'] & {
             stroke: var(--black);
           }
         }
@@ -214,7 +215,7 @@ $val in $colors {
     &.badge-p-space {
       padding: 10px 14px;
     }
-    &+.badge {
+    & + .badge {
       margin-left: 0px;
     }
     &.btn-p-space {
@@ -226,7 +227,7 @@ $val in $colors {
   }
 }
 .badge-dark {
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     background-color: var(--light-color);
     border-color: var(--light-color);
   }

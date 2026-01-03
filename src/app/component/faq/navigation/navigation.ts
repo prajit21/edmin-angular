@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { navigationData1 } from '../../../shared/data/faq/faq';

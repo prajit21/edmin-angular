@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Friday } from './friday/friday';
 import { Monday } from './monday/monday';
@@ -12,6 +12,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-schedule-time',
   imports: [Monday, Thursday, Wednesday, Tuesday, Friday, ClickOutsideDirective, NgClass],
   templateUrl: './schedule-time.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './schedule-time.scss',
 })
 export class ScheduleTime {

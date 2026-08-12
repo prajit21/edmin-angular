@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
@@ -9,6 +9,7 @@ import { DescriptionCategoies } from './description-categoies/description-catego
   selector: 'app-add-product',
   imports: [DropzoneModule, DescriptionCategoies, RouterModule],
   templateUrl: './add-product.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './add-product.scss',
 })
 export class AddProduct {

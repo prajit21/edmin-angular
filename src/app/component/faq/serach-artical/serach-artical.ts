@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
 
@@ -6,6 +6,7 @@ import { Feathericon } from '../../../shared/component/feathericon/feathericon';
   selector: 'app-serach-artical',
   imports: [Feathericon],
   templateUrl: './serach-artical.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './serach-artical.scss',
 })
 export class SerachArtical {}

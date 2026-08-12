@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 interface cartitem {
@@ -41,6 +41,7 @@ export const carts: cartitem[] = [
   selector: 'app-cart',
   imports: [RouterModule],
   templateUrl: './cart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './cart.scss',
 })
 export class Cart {

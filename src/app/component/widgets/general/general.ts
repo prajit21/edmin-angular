@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import {
   TotalSale,
@@ -25,6 +25,7 @@ import { ProjectProgress } from '../../dashboard/project/project-progress/projec
     ProjectProgress,
   ],
   templateUrl: './general.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './general.scss',
 })
 export class General {

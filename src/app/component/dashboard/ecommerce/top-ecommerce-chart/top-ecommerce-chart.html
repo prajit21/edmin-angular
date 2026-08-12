@@ -6,7 +6,7 @@
           <h5 class="f-18 font-light">{{data()?.name}}</h5>
           <div class="badge align-items-center d-flex badge-light-{{data()?.class1}}">
             <div class="feather me-1 pt-0 stroke-{{ data()?.class1}}">
-              <app-feather-icon [icon]="data()?.icon2" />
+              <app-feather-icon [icon]="$safeNavigationMigration(data()?.icon2)" />
             </div>
             <span class="f-w-500">{{data()?.percentage}}</span>
           </div>

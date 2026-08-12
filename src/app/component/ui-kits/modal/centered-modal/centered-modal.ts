@@ -1,4 +1,4 @@
-import { Component, inject, TemplateRef } from '@angular/core';
+import { Component, inject, TemplateRef, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -6,6 +6,7 @@ import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-centered-modal',
   imports: [NgbModule],
   templateUrl: './centered-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './centered-modal.scss',
 })
 export class CenteredModal {

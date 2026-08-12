@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import * as data from '../../../shared/data/buttons/buttons';
 import { CommonButtons } from '../common-buttons/common-buttons';
@@ -8,6 +8,7 @@ import { CommonButtons } from '../common-buttons/common-buttons';
   selector: 'app-buttons-style',
   imports: [CommonButtons, NgClass],
   templateUrl: './buttons-style.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './buttons-style.scss',
 })
 export class ButtonsStyle {

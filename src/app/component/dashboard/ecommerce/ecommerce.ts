@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BestSellers } from './best-sellers/best-sellers';
 import { CategoryOverview } from './category-overview/category-overview';
@@ -31,6 +31,7 @@ import {
     TopSellingProducts,
   ],
   templateUrl: './ecommerce.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './ecommerce.scss',
 })
 export class Ecommerce {

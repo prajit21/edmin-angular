@@ -1,5 +1,5 @@
 import { SlicePipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -33,6 +33,7 @@ import { SvgIcon } from '../svg-icon/svg-icon';
     SlicePipe,
   ],
   templateUrl: './header.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './header.scss',
 })
 export class Header {

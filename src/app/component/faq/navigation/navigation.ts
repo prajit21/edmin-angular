@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { navigationData1 } from '../../../shared/data/faq/faq';
 
@@ -6,6 +6,7 @@ import { navigationData1 } from '../../../shared/data/faq/faq';
   selector: 'app-navigation',
   imports: [],
   templateUrl: './navigation.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './navigation.scss',
 })
 export class Navigation {

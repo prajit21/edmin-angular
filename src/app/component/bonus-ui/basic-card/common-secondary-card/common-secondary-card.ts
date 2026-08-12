@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { commonSecondaryData } from '../../../../shared/data/bonus-ui/basic-card';
 
@@ -6,6 +6,7 @@ import { commonSecondaryData } from '../../../../shared/data/bonus-ui/basic-card
   selector: 'app-common-secondary-card',
   imports: [],
   templateUrl: './common-secondary-card.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './common-secondary-card.scss',
 })
 export class CommonSecondaryCard {

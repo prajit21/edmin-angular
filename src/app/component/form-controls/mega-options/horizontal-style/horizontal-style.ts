@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,6 +11,7 @@ import {
   selector: 'app-horizontal-style',
   imports: [NgbModule],
   templateUrl: './horizontal-style.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './horizontal-style.scss',
 })
 export class HorizontalStyle {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import * as data from '../../../../shared/data/ui-kits/alert';
 
@@ -6,6 +6,7 @@ import * as data from '../../../../shared/data/ui-kits/alert';
   selector: 'app-border-direction-alert',
   imports: [],
   templateUrl: './border-direction-alert.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './border-direction-alert.scss',
 })
 export class BorderDirectionAlert {

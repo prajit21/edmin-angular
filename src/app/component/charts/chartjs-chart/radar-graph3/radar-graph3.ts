@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BaseChartDirective } from 'ng2-charts';
 
@@ -8,6 +8,7 @@ import * as chartData from '../../../../shared/data/charts/chartjs';
   selector: 'app-radar-graph3',
   imports: [BaseChartDirective],
   templateUrl: './radar-graph3.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './radar-graph3.scss',
 })
 export class RadarGraph3 {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -10,6 +10,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-product-offer',
   imports: [RouterModule, ClickOutsideDirective, CarouselModule],
   templateUrl: './product-offer.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product-offer.scss',
 })
 export class ProductOffer {

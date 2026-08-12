@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
 import * as L from 'leaflet';
@@ -7,6 +7,7 @@ import * as L from 'leaflet';
   selector: 'app-leaflet-map',
   imports: [LeafletModule],
   templateUrl: './leaflet-map.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './leaflet-map.scss',
 })
 export class LeafletMap {

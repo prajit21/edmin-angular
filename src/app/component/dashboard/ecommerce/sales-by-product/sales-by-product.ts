@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { SalesProduct } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-sales-by-product',
   imports: [ClickOutsideDirective],
   templateUrl: './sales-by-product.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sales-by-product.scss',
 })
 export class SalesByProduct {

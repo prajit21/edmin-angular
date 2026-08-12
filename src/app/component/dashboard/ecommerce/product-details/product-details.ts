@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
 import { Addproduct } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
@@ -7,6 +7,7 @@ import { Addproduct } from '../../../../shared/data/dashboard/ecommerce/ecommerc
   selector: 'app-product-details',
   imports: [Feathericon],
   templateUrl: './product-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product-details.scss',
 })
 export class ProductDetails {

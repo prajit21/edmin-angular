@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ActivityReport } from './activity-report/activity-report';
 import { Calender } from './calender/calender';
@@ -26,6 +26,7 @@ import { TotalRevenue } from './total-revenue/total-revenue';
     TotalProject,
   ],
   templateUrl: './project.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './project.scss',
 })
 export class Project {}

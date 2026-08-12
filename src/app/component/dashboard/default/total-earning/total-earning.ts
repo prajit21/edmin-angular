@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -9,6 +9,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-total-earning',
   imports: [NgApexchartsModule, ClickOutsideDirective],
   templateUrl: './total-earning.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './total-earning.scss',
 })
 export class TotalEarning {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AdditionalContent } from './additional-content/additional-content';
 import { BorderDirectionAlert } from './border-direction-alert/border-direction-alert';
@@ -19,6 +19,7 @@ import * as Data from '../../../shared/data/ui-kits/alert';
     LiveAlert,
   ],
   templateUrl: './alert.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './alert.scss',
 })
 export class Alert {

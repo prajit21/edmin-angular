@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { DifferntTagAccordion } from './differnt-tag-accordion/differnt-tag-accordion';
 import { FlushAccordion } from './flush-accordion/flush-accordion';
@@ -20,6 +20,7 @@ import { SimpleAccordion } from './simple-accordion/simple-accordion';
     DifferntTagAccordion,
   ],
   templateUrl: './accordion.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './accordion.scss',
 })
 export class Accordion {}

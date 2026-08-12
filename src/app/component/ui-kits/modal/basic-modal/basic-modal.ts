@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { OpenModalEdmin } from './open-modal-edmin/open-modal-edmin';
 import { ScrollingContent } from './scrolling-content/scrolling-content';
@@ -9,6 +9,7 @@ import { TooltipsPopovers } from './tooltips-popovers/tooltips-popovers';
   selector: 'app-basic-modal',
   imports: [OpenModalEdmin, ScrollingContent, Simple, TooltipsPopovers],
   templateUrl: './basic-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './basic-modal.scss',
 })
 export class BasicModal {}

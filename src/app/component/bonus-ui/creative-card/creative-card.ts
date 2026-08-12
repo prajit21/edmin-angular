@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BorderPrimaryState } from './border-primary-state/border-primary-state';
 import { BorderSuccessState } from './border-success-state/border-success-state';
@@ -16,6 +16,7 @@ import { CommonBottomCard } from './common-bottom-card/common-bottom-card';
     CommonBottomCard,
   ],
   templateUrl: './creative-card.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './creative-card.scss',
 })
 export class CreativeCard {}

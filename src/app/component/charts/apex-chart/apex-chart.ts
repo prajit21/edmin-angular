@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BasicAreaChart } from './basic-area-chart/basic-area-chart';
 import { BasicLineChart } from './basic-line-chart/basic-line-chart';
@@ -32,6 +32,7 @@ import { RadialChart } from './radial-chart/radial-chart';
     RadialChart,
   ],
   templateUrl: './apex-chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './apex-chart.scss',
 })
 export class ApexChart {}

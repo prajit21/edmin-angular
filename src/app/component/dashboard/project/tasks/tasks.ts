@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
@@ -9,6 +9,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-tasks',
   imports: [Feathericon, ClickOutsideDirective, RouterModule],
   templateUrl: './tasks.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './tasks.scss',
 })
 export class Tasks {

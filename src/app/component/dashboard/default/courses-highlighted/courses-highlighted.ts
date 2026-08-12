@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { CoursesHighlight } from '../../../../shared/data/dashboard/default/default';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-courses-highlighted',
   imports: [ClickOutsideDirective, RouterModule],
   templateUrl: './courses-highlighted.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './courses-highlighted.scss',
 })
 export class CoursesHighlighted {

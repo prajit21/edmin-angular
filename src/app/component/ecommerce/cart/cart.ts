@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { cartItem } from '../../../shared/data/ecommerce/cart';
@@ -7,6 +7,7 @@ import { cartItem } from '../../../shared/data/ecommerce/cart';
   selector: 'app-cart',
   imports: [RouterModule],
   templateUrl: './cart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './cart.scss',
 })
 export class Cart {

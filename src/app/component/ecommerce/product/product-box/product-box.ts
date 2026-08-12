@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { NgbModal, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -12,6 +12,7 @@ import { QuickView } from '../quick-view/quick-view';
   selector: 'app-product-box',
   imports: [RouterModule],
   templateUrl: './product-box.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product-box.scss',
 })
 export class ProductBox {

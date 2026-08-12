@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -9,6 +9,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-category-overview',
   imports: [NgApexchartsModule, ClickOutsideDirective],
   templateUrl: './category-overview.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './category-overview.scss',
 })
 export class CategoryOverview {

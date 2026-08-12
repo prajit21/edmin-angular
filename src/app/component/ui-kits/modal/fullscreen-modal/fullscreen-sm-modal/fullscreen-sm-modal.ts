@@ -1,4 +1,4 @@
-import { Component, inject, TemplateRef } from '@angular/core';
+import { Component, inject, TemplateRef, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -6,6 +6,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-fullscreen-sm-modal',
   imports: [],
   templateUrl: './fullscreen-sm-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './fullscreen-sm-modal.scss',
 })
 export class FullscreenSmModal {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { TodoList } from '../../../../shared/data/dashboard/project/project';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-to-do-list',
   imports: [FormsModule, ClickOutsideDirective],
   templateUrl: './to-do-list.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './to-do-list.scss',
 })
 export class ToDoList {

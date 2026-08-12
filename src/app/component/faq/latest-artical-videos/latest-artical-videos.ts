@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { articlesAndVideos } from '../../../shared/data/faq/faq';
 
@@ -6,6 +6,7 @@ import { articlesAndVideos } from '../../../shared/data/faq/faq';
   selector: 'app-latest-artical-videos',
   imports: [],
   templateUrl: './latest-artical-videos.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './latest-artical-videos.scss',
 })
 export class LatestArticalVideos {

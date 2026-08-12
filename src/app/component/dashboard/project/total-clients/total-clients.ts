@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -9,6 +9,7 @@ import { Totalclients } from '../../../../shared/data/dashboard/project/project-
   selector: 'app-total-clients',
   imports: [RouterModule, NgApexchartsModule],
   templateUrl: './total-clients.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './total-clients.scss',
 })
 export class TotalClients {

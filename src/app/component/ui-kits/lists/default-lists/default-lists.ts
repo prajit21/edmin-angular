@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { HorizontalLists } from '../../../../shared/data/ui-kits/lists';
 
@@ -6,6 +6,7 @@ import { HorizontalLists } from '../../../../shared/data/ui-kits/lists';
   selector: 'app-default-lists',
   imports: [],
   templateUrl: './default-lists.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './default-lists.scss',
 })
 export class DefaultLists {

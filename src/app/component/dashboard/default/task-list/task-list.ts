@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +10,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-task-list',
   imports: [RouterModule, ClickOutsideDirective, Feathericon, FormsModule],
   templateUrl: './task-list.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './task-list.scss',
 })
 export class TaskList {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AllInvoices } from './all-invoices/all-invoices';
 import { CoursesHighlighted } from './courses-highlighted/courses-highlighted';
@@ -35,6 +35,7 @@ import { TotalClients, NewProject } from '../../../shared/data/dashboard/default
     TotalVisit,
   ],
   templateUrl: './default.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './default.scss',
 })
 export class Default {

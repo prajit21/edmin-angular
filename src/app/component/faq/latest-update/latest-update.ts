@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { LatestUpdates } from '../../../shared/data/faq/faq';
 
@@ -6,6 +6,7 @@ import { LatestUpdates } from '../../../shared/data/faq/faq';
   selector: 'app-latest-update',
   imports: [],
   templateUrl: './latest-update.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './latest-update.scss',
 })
 export class LatestUpdate {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -8,6 +8,7 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
   selector: 'app-dumbbell-chart',
   imports: [NgApexchartsModule],
   templateUrl: './dumbbell-chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './dumbbell-chart.scss',
 })
 export class DumbbellChart {

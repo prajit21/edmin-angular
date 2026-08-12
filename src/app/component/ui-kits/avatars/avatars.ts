@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Grouping } from './grouping/grouping';
 import { GroupingWithCounter } from './grouping-with-counter/grouping-with-counter';
@@ -11,6 +11,7 @@ import { StatusIndicator } from './status-indicator/status-indicator';
   selector: 'app-avatars',
   imports: [Grouping, GroupingWithCounter, Ratio, Shapes, Sizes, StatusIndicator],
   templateUrl: './avatars.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './avatars.scss',
 })
 export class Avatars {}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BaseChartDirective } from 'ng2-charts';
 
@@ -8,6 +8,7 @@ import * as chartData from '../../../../shared/data/charts/chartjs';
   selector: 'app-donut-graph',
   imports: [BaseChartDirective],
   templateUrl: './donut-graph.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './donut-graph.scss',
 })
 export class DonutGraph {

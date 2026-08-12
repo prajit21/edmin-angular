@@ -1,5 +1,5 @@
 import { JsonPipe } from '@angular/common';
-import { Component, inject, TemplateRef, viewChild } from '@angular/core';
+import { Component, inject, TemplateRef, viewChild, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NgbModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -54,6 +54,7 @@ const colors: Record<string, EventColor> = {
     CalendarEventTitleFormatter,
   ],
   templateUrl: './calender.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './calender.scss',
 })
 export class Calender {

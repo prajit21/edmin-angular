@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
 import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
   selector: 'app-file-manager-sidebar',
   imports: [Feathericon, ClickOutsideDirective],
   templateUrl: './file-manager-sidebar.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './file-manager-sidebar.scss',
 })
 export class FileManagerSidebar {

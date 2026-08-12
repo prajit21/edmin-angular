@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { SvgIcon } from '../../../../shared/component/svg-icon/svg-icon';
 
@@ -6,6 +6,7 @@ import { SvgIcon } from '../../../../shared/component/svg-icon/svg-icon';
   selector: 'app-product-progress',
   imports: [SvgIcon],
   templateUrl: './product-progress.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product-progress.scss',
 })
 export class ProductProgress {}

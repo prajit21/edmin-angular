@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -8,6 +8,7 @@ import { DashboardWidgetOption } from '../../../../shared/interface/dashboard/ch
   selector: 'app-top-common-chart',
   imports: [NgApexchartsModule],
   templateUrl: './top-common-chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './top-common-chart.scss',
 })
 export class TopCommonChart {

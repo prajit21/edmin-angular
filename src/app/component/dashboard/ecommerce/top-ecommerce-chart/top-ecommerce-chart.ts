@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -9,6 +9,7 @@ import { OrderChartOption } from '../../../../shared/interface/widgets/chart';
   selector: 'app-top-ecommerce-chart',
   imports: [NgApexchartsModule, Feathericon],
   templateUrl: './top-ecommerce-chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './top-ecommerce-chart.scss',
 })
 export class TopEcommerceChart {

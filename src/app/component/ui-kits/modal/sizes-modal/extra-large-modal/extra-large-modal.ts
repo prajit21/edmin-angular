@@ -1,4 +1,4 @@
-import { Component, inject, TemplateRef } from '@angular/core';
+import { Component, inject, TemplateRef, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -6,6 +6,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-extra-large-modal',
   imports: [],
   templateUrl: './extra-large-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './extra-large-modal.scss',
 })
 export class ExtraLargeModal {

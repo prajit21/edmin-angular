@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -8,6 +8,7 @@ import { MonthlyOverviews } from '../../../../shared/data/dashboard/default/defa
   selector: 'app-monthly-overview',
   imports: [NgApexchartsModule],
   templateUrl: './monthly-overview.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './monthly-overview.scss',
 })
 export class MonthlyOverview {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-nested-accordion',
   imports: [NgbModule],
   templateUrl: './nested-accordion.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './nested-accordion.scss',
 })
 export class NestedAccordion {

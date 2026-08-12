@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ExtraLargeModal } from './extra-large-modal/extra-large-modal';
 import { LargeModal } from './large-modal/large-modal';
@@ -9,6 +9,7 @@ import { FullScreenModal } from '../sizes-modal/full-screen-modal/full-screen-mo
   selector: 'app-sizes-modal',
   imports: [SmallModal, LargeModal, ExtraLargeModal, FullScreenModal],
   templateUrl: './sizes-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sizes-modal.scss',
 })
 export class SizesModal {}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-project-overview',
   imports: [ClickOutsideDirective, Feathericon],
   templateUrl: './project-overview.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './project-overview.scss',
 })
 export class ProjectOverview {

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 import * as data from '../../../shared/data/buttons/buttons';
 
@@ -6,6 +6,7 @@ import * as data from '../../../shared/data/buttons/buttons';
   selector: 'app-common-buttons',
   imports: [],
   templateUrl: './common-buttons.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './common-buttons.scss',
 })
 export class CommonButtons {

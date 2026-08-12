@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AllInvoice } from '../../../../shared/data/dashboard/default/default';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-all-invoices',
   imports: [ClickOutsideDirective, RouterModule],
   templateUrl: './all-invoices.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './all-invoices.scss',
 })
 export class AllInvoices {
